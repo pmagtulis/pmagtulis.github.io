@@ -2,7 +2,7 @@
 
 # What is this?
 
-It's an HTML code for my portfolio website created with **Bulma**. Access it [here](pmagtulis.github.io).
+It's an HTML code for my portfolio website created with **Bulma**. Access it [here](https://pmagtulis.github.io).
 
 # Contact
 
