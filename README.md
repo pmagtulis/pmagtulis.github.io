@@ -2,17 +2,16 @@
 
 # What is this?
 
-It's an HTML code for my portfolio website created with **Bulma**. Access it [here](https://pmagtulis.github.io). This also serves as central repository of my
+HTML for my portfolio website created with **Bulma**. Access it [here](https://pmagtulis.github.io). This also serves as central repository of my
 projects, both personal and in fulfillment of requirements for my graduate degree at Columbia.
 
 # What's in here?
 
 |**Directory/File**|**Contents**|
 |---|---|
-|*charts*|Contains all .png files used in the website|
-|*projects*|Contains all project files, including notebooks, data, and web pages. Each project has its own directory as well|
+|*charts*|Contains all image (.png, .svg) files used in the website|
+|*projects*|Contains all project files, including notebooks, data, and web pages. Each project has its own directory|
 |*html files*|main and branch pages of my site|
-
 
 # Contact
 
