@@ -27,21 +27,21 @@ function init() {
 
     facebookBtn.setAttribute(
         "href", 
-        'https://www.facebook.com/sharer.php?u=${postUrl}'
+        `https://www.facebook.com/sharer.php?u=${postUrl}`
 );
 
   twitterBtn.setAttribute(
         "href", 
-        'https://twitter.com/share?url=&{postUrl}&text=${postTitle}'
+        `https://twitter.com/share?url=&{postUrl}&text=${postTitle}`
 );
     linkedinBtn.setAttribute(
         "href", 
-        'https://www.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}'
+        `https://www.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}`
 );
 
 whatsappBtn.setAttribute(
     "href", 
-    'https://api.whatsapp.com/send?text=${postTitle} ${postUrl}'
+    `https://api.whatsapp.com/send?text=${postTitle} ${postUrl}`
 );
 
 }
