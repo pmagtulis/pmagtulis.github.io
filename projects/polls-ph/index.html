@@ -14,6 +14,51 @@
 
     <title>Here are the vote-rich areas for the 2022 Philippine polls | Prinz Magtulis</title>
   </head>
+
+  <style>
+	.share-btn-container {
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		padding: 16px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		position: fixed;
+		top: 70%;
+		transform: translateY(-70%);
+	}
+	.share-btn-container a i {
+		font-size: 24px;
+	}
+	.share-btn-container a{
+		margin: 12px 0;
+		transition: 500ms;
+	}
+	.share-btn-container a:hover {
+		transform: scale(1.2);
+	}
+
+	@media (max-width: 550px) {
+	  .content {
+		  padding: 8px 32px;
+	  }
+	  .share-btn-container {
+		  transform: unset;
+		  top: unset;
+		  left: 0;
+		  bottom: 0;
+		  width: 100%;
+		  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+		  flex-direction: row;
+		  padding: 16px 0;
+		  justify-content: center;
+	  }
+	  .share-btn-container a {
+		  margin: 0 32px;
+
+	  }
+	}
+</style>
+
   <body>
     <section class="hero has-background-dark">
         <div class="hero-body">
@@ -26,6 +71,26 @@
             <a class="text has-text-white" href="https://github.com/pmagtulis" target="_blank"><i class="fab fa-github fa-lg"></i></a>
             <a class="text has-text-white" href="https://www.linkedin.com/in/prinzmagtulis/" target="_blank"><i class="fab fa-linkedin fa-lg"> </i></a>
         </div>
+
+		<div class="share-btn-container">
+			<a href="#" class="facebook-btn">
+				<i class="fab fa-facebook"></i>
+			</a>
+		
+			<a href="#" class="twitter-btn">
+			  <i class="fab fa-twitter"></i>
+		  </a>
+		
+		  <a href="#" class="linkedin-btn">
+			  <i class="fab fa-linkedin"></i>
+		  </a>
+		
+		  <a href="#" class="whatsapp-btn">
+			  <i class="fab fa-whatsapp"></i>
+		  </a>
+		
+		</div>
+
       </section>
     <br>
 
@@ -503,6 +568,9 @@
 	Back in Metro Manila, Caloocan City follow QC and Manila with over 700,000 registered voters, data showed. Makati, the central financial district, has over 458,000. <strong><em>Prinz Magtulis</em></strong>
 </div>
     </div>
+
+	<script src="https://pmagtulis.github.io/projects/socials.js"></script>
+	
 </body>
 
 <footer class="footer">
