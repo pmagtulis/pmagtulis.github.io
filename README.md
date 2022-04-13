@@ -10,8 +10,8 @@ projects, both personal and in fulfillment of requirements for my graduate degre
 |**Directory/File**|**Contents**|
 |---|---|
 |*charts*|Contains all image (.png, .svg) files used in the website|
-|*projects*|Contains all project files, including notebooks, data, and web pages. Each project has its own directory|
-|*html files*|main and branch pages of my site|
+
+Each directory corresponds to a webpage and contains all files related to them, including notebooks, ai2html files, and html pages.
 
 # Contact
 
