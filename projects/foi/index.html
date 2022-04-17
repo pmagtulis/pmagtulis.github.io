@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://kit.fontawesome.com/092b142fb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta property="og:title" content="Access denied: Duterte's freedom of information hardly makes gov't accountable">
+	<meta property="og:description" content="FOI has improved information access. But gov't has also kept sensitive ones under wraps.">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://pmagtulis.github.io/charts/magnify.jpeg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@prinzmagtulis">
+
+	<title> Access denied: Duterte's freedom of information hardly makes gov't accountable | Prinz Magtulis</title>
+    <style>
+      #scrolly {
+        position: relative;
+        padding: 1rem;
+      }
+
+      .scrolly-overlay {
+        position: relative;
+        padding: 0;
+        max-width: 35rem;
+        margin: 0 auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 0;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        margin-bottom: 25rem;
+        background-color: #eee;
+        background-color: #fff;
+        color: black;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .hidden { visibility: hidden; }
+
+      /* When it's less than 700 pixels wide, do normal scrollytelling */
+      @media only screen and (min-width: 700px) {
+        #scrolly.side-by-side {
+          display: flex;
+        }
+
+        #scrolly.side-by-side > div {
+          flex-basis: 0;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 0.75em;
+        }
+
+        #scrolly.side-by-side .scrolly-overlay {
+          margin-top: 70vh;
+          order: 0;
+          /* Change these to adjust sizing options */
+          min-width: 15rem;
+          max-width: 20rem;
+		  z-index: 1000;
+        }
+
+        #scrolly.side-by-side .sticky-thing {
+          order: 1;
+          flex-grow: 2;
+        }
+      }
+    </style>
+
+<style>
+	.has-bg-img { 
+		background: url("https://pmagtulis.github.io/charts/magnify.jpeg"); 
+		background-size:cover; 
+	}
+
+	.share-btn-container {
+		  background: #fff;
+		  display: flex;
+		  flex-direction: column;
+		  padding: 16px;
+		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		  position: fixed;
+		  top: 70%;
+		  transform: translateY(-70%);
+	  }
+	  .share-btn-container a i {
+		  font-size: 24px;
+	  }
+	  .share-btn-container a{
+		  margin: 12px 0;
+		  transition: 500ms;
+	  }
+	  .share-btn-container a:hover {
+		  transform: scale(1.2);
+	  }
+
+	  @media (max-width: 550px) {
+		.content {
+			padding: 8px 32px;
+		}
+		.share-btn-container {
+			transform: unset;
+			top: unset;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+			flex-direction: row;
+			z-index: 1000;
+			padding: 16px 0;
+			justify-content: center;
+		}
+		.share-btn-container a {
+			margin: 0 32px;
+
+		}
+	  }
+</style>
+
+	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+	
+  </head>
+
+  <body>
+	<section class="hero is-large has-bg-img"> 
+		<div class="hero-body"> <div class="container has-text-centered"> 
+			<h1 class="title has-text-bold">Access denied: Duterte's freedom of information hardly makes gov't accountable</h1> 
+			<h2 class="subtitle"><em>FOI has improved information access. But gov't has also kept sensitive ones under wraps</em></h2>
+			<br>
+			<em>April 17, 2022</em>
+		</div> </div> 
+
+		<div class="share-btn-container">
+			<a href="#" class="facebook-btn">
+			  <i class="fab fa-facebook"></i>
+			</a>
+		  
+			<a href="#" class="twitter-btn">
+			  <i class="fab fa-twitter"></i>
+			</a>
+		  
+			<a href="#" class="linkedin-btn">
+			  <i class="fab fa-linkedin"></i>
+			</a>
+		  
+			<a href="#" class="whatsapp-btn">
+			  <i class="fab fa-whatsapp"></i>
+			</a>
+		  
+		  </div>
+
+	</section>
+	<br>
+	<div class="container column is-half-desktop is-full-mobile is-full-tablet">
+		<div class="block">
+			When Philippine President Rodrigo Duterte signed an executive order on Freedom for Information (FOI) shortly after he was elected in 2016, his spokesperson, Martin Andanar, said that 
+			“contracts involving the use of public funds will be made available” to the public.
+	</div>
+
+	<div class="block">
+		Nearly six years since the FOI was institutionalized, however, not only are contents of most government contracts still inaccessible to the public, 
+		but previously available documents like annual filings that reveal how much public officials are worth have likewise become difficult to obtain, even for members of the media.
+	</div>
+	<div class="block">
+		Such is the irony of Duterte's FOI order, supposedly an answer to decades of public clamor for transparency in a government consistently haunted by accusations of corruption. 
+		The bad news is this is not easily obvious in the data, which broadly would show an impressive record. 
+		Since 2016, over 110,000 FOI requests had been filed, of which 40% were tagged “successful,” indicating that the requested information was provided. 
+	</div>
+	<div class="block">
+		Only about one in four requests was denied, while the rest were at varying levels of clearance as of April 10.
+	</div>
+	<div class="block">
+		<p class="mb-1 title is-5">Less than half of FOI requests get approved</p>
+	<p class="mt-0 subtitle is-6">Status of FOI requests since 2016 as of April 10</p>
+	</div>
+	</div>
+	<div class="container column is-full-desktop is-full-mobile is-full-tablet">
+
+
+
+<!-- Generated by ai2html v0.106.0 - 2022-04-17 19:13 -->
+<!-- ai file: foi_full.ai -->
+<style media="screen,print">
+	#g-foi_full-box ,
+	#g-foi_full-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-foi_full-box p {
+		margin:0;
+	}
+	#g-foi_full-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-foi_full-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-foi_full-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-foi_full-box .g-aiPointText p { white-space: nowrap; }
+	#g-foi_full-desktop {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-foi_full-desktop p {
+		font-family:roboto,regular,sans-serif;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(70,70,70);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-foi_full-desktop .g-pstyle0 {
+		height:17px;
+		text-align:right;
+	}
+	#g-foi_full-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-foi_full-mobile p {
+		font-family:roboto,regular,sans-serif;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(70,70,70);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-foi_full-mobile .g-pstyle0 {
+		height:17px;
+		text-align:right;
+	}
+
+</style>
+
+<div id="g-foi_full-box" class="ai2html">
+
+	<!-- Artboard: desktop -->
+	<div id="g-foi_full-desktop" class="g-artboard" style="width:800px; height:538.277695457753px;" data-aspect-ratio="1.486" data-min-width="800">
+<div style=""></div>
+		<img id="g-foi_full-desktop-img" class="g-aiImg" alt="" src="foi_full-desktop.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:15.6769%;margin-top:-9.4px;right:81.3928%;width:91px;">
+			<p class="g-pstyle0">Successful</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.0413%;margin-top:-9.4px;right:81.5681%;width:73px;">
+			<p class="g-pstyle0">Pending</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.22%;margin-top:-9.4px;right:81.5914%;width:65px;">
+			<p class="g-pstyle0">Denied</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.1418%;margin-top:-9.4px;right:81.6304%;width:143px;">
+			<p class="g-pstyle0">Partially successful</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.4467%;margin-top:-9.4px;right:78.9933%;width:30px;">
+			<p class="g-pstyle0">0</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.4467%;margin-top:-9.4px;right:41.9777%;width:38px;">
+			<p class="g-pstyle0">20</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.4467%;margin-top:-9.4px;right:4.592%;width:51px;">
+			<p class="g-pstyle0">40 %</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-foi_full-mobile" class="g-artboard" style="max-width: 380px;max-height: 630px" data-aspect-ratio="0.603" data-min-width="0" data-max-width="799">
+<div style="padding: 0 0 165.7023% 0;"></div>
+		<img id="g-foi_full-mobile-img" class="g-aiImg" alt="" src="foi_full-mobile.png"/>
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:14.672%;margin-top:-9.4px;right:61.507%;width:91px;">
+			<p class="g-pstyle0">Successful</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.0648%;margin-top:-9.4px;right:61.876%;width:73px;">
+			<p class="g-pstyle0">Pending</p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.4575%;margin-top:-9.4px;right:61.9251%;width:65px;">
+			<p class="g-pstyle0">Denied</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.9619%;margin-top:-9.4px;right:62.0073%;width:143px;">
+			<p class="g-pstyle0">Partially successful</p>
+		</div>
+		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.6199%;margin-top:-9.4px;right:55.5124%;width:30px;">
+			<p class="g-pstyle0">0</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.6199%;margin-top:-9.4px;right:32.7048%;width:38px;">
+			<p class="g-pstyle0">20</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.6199%;margin-top:-9.4px;right:10.771%;width:38px;">
+			<p class="g-pstyle0">40</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2022-04-17 19:13 -->
+
+</div>
+
+<div class="container column is-half-desktop is-full-mobile is-full-tablet">
+	<div class="block">
+		<p class="subtitle is-6">Sources: FOI portal, Presidential Communications Office</p>
+		</div>
+		<div class="block">
+			But headline numbers do not tell the whole story. 
+		</div>
+		<div class="block">
+			For instance, over 370 requests for Statements of Assets, Liabilities and Net Worth (SALN) of various public officials including President Duterte and his Cabinet were made since 2016 until April 10 this year. 
+			Of those, only a tenth was granted, majority by Vice President Leni Robredo, who belongs to the opposition. 
+			FOI requests for Duterte's SALN, some going as early as 2016, have remained unacted upon.
+		</div>
+	</div>
+      <section id="scrolly">
+        <div class="sticky-thing">
+          <div class="ai2html-container">
+
+<!-- ai2html goes below this line -->
+
+
+<!-- Generated by ai2html v0.106.0 - 2022-04-17 18:09 -->
+<!-- ai file: saln.ai -->
+<style media="screen,print">
+	#g-saln-box ,
+	#g-saln-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-saln-box p {
+		margin:0;
+	}
+	#g-saln-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-saln-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-saln-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-saln-box .g-aiPointText p { white-space: nowrap; }
+	#g-saln-web {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-saln-web p {
+		font-family:roboto,regular,sans-serif;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(70,70,70);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-saln-web .g-pstyle0 {
+		height:17px;
+	}
+	#g-saln-web .g-pstyle1 {
+		height:17px;
+		text-align:right;
+	}
+	#g-saln-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-saln-mobile p {
+		font-family:roboto,regular,sans-serif;
+		line-height:17px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:14px;
+		text-align:left;
+		color:rgb(70,70,70);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-saln-mobile .g-pstyle0 {
+		height:17px;
+	}
+	#g-saln-mobile .g-pstyle1 {
+		height:17px;
+		text-align:right;
+	}
+
+</style>
+
+<div id="g-saln-box" class="ai2html">
+
+	<!-- Artboard: web -->
+	<div id="g-saln-web" class="g-artboard" style="width:800px; height:565.284342499655px;" data-aspect-ratio="1.415" data-min-width="800">
+<div style=""></div>
+		<img id="g-saln-web-img" class="g-aiImg" alt="" src="saln-web.png"/>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="g-aiImg" version="1.2" baseProfile="tiny" id="g-saln-web-interactions-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 800 565.284" overflow="visible" xml:space="preserve">
+<g>
+	<g id="2021-annotations" data-name="2021-annotations">
+		<g id="arrow-2-desktop" data-name="arrow-2-desktop">
+			<path fill="none" stroke="#464646" d="M694.163,420.674c-5.161-4.198-32.009-27.124-24.722-44.131"/>
+			<g>
+				<polygon fill="#464646" points="694.305,415.384 693.311,415.5 693.889,420.397 688.962,420.615 689.008,421.615 
+					695.008,421.348 				"/>
+			</g>
+		</g>
+		<g id="arrow-2-mobile" data-name="arrow-2-mobile">
+			<path fill="none" stroke="#464646" d="M1112.262,474.481c-2.877-4.9-15.064-27.999,4.813-37.256"/>
+			<g>
+				<polygon fill="#464646" points="1114.258,469.571 1113.286,469.332 1112.111,474.12 1107.42,472.597 1107.112,473.549 
+					1112.825,475.403 				"/>
+			</g>
+		</g>
+		<text transform="matrix(1 0 0 1 1082.8468 401.0108)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">Over one in five</text>
+		<text transform="matrix(1 0 0 1 1099.7384 417.8106)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">requests for </text>
+		<text transform="matrix(1 0 0 1 1098.3439 434.6104)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">SALN denied</text>
+	</g>
+	<g id="2018-annotations" data-name="2018-annotations">
+		<g id="arrow-1-desktop" data-name="arrow-1-desktop">
+			<path fill="none" stroke="#464646" d="M271.81,94.764c-2.297-32.82,51.847-15.332,51.847-15.332"/>
+			<g>
+				<polygon fill="#464646" points="275.832,91.302 275.076,90.647 271.852,94.378 268.366,90.889 267.659,91.597 271.905,95.845 
+									"/>
+			</g>
+		</g>
+		<g id="arrow-1-mobile" data-name="arrow-1-mobile">
+			<path fill="none" stroke="#464646" d="M950.334,72.847c19.332-28.995,27.768,14.928,27.768,14.928"/>
+			<g>
+				<polygon fill="#464646" points="955.606,72.468 955.392,71.49 950.577,72.549 949.872,67.668 948.882,67.812 949.741,73.756 
+									"/>
+			</g>
+		</g>
+		<text transform="matrix(1 0 0 1 1004.8677 84.1507)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">7 out of 9</text>
+		<text transform="matrix(1 0 0 1 971.4331 100.9505)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">SALN requests</text>
+		<text transform="matrix(1 0 0 1 988.8032 117.7503)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">were denied</text>
+	</g>
+	<g id="2021-overall" data-name="2021-overall">
+		<path id="2021-overall-desktop" data-name="2021-overall-desktop" fill="#C8C8C8" d="M609.637,518.946
+			L609.637,518.946V414.694l0,0h59.2l0,0v104.252l0,0H609.637z"/>
+		<path id="2021-overall-mobile" data-name="2021-overall-mobile" fill="#C8C8C8" d="M1075.027,596
+			L1075.027,596V467.074l0,0h25.44l0,0V596l0,0H1075.027z"/>
+	</g>
+	<g id="2020-overall" data-name="2020-overall">
+		<path id="2020-overall-desktop" data-name="2020-overall-desktop" fill="#C8C8C8" d="M465.953,518.946
+			L465.953,518.946V393.844l0,0h59.2l0,0v125.102l0,0H465.953z"/>
+		<path id="2020-overall-mobile" data-name="2020-overall-mobile" fill="#C8C8C8" d="M1020.211,596
+			L1020.211,596V441.289l0,0h25.44l0,0V596l0,0H1020.211z"/>
+	</g>
+	<g id="2019-overall" data-name="2019-overall">
+		<path id="2019-overall-desktop" data-name="2019-overall-desktop" fill="#C8C8C8" d="M322.662,518.946
+			L322.662,518.946V375.212l0,0h59.2l0,0v143.734l0,0H322.662z"/>
+		<path id="2019-overall-mobile" data-name="2019-overall-mobile" fill="#C8C8C8" d="M965.544,596
+			L965.544,596V418.247l0,0h25.44l0,0V596l0,0H965.544z"/>
+	</g>
+	<g id="2018-overall" data-name="2018-overall">
+		<path id="2018-overall-desktop" data-name="2018-overall-desktop" fill="#C8C8C8" d="M179.371,518.946
+			L179.371,518.946V363.677l0,0h59.2l0,0v155.269l0,0H179.371z"/>
+		<path id="2018-overall-mobile" data-name="2018-overall-mobile" fill="#C8C8C8" d="M910.877,596
+			L910.877,596V403.983l0,0h25.44l0,0V596l0,0H910.877z"/>
+	</g>
+	<g id="2017-overall" data-name="2017-overall">
+		<path id="2017-overall-desktop" data-name="2017-overall-desktop" fill="#C8C8C8" d="M36.08,518.946
+			L36.08,518.946V328.187l0,0h59.2l0,0v190.759l0,0H36.08z"/>
+		<path id="2017-overall-mobile" data-name="2017-overall-mobile" fill="#C8C8C8" d="M856.21,596
+			L856.21,596V360.094l0,0h25.44l0,0V596l0,0H856.21z"/>
+	</g>
+	<g id="2021-saln" data-name="2021-saln">
+		<path id="2021-saln-desktop" data-name="2021-saln-desktop" fill="#7F3A39" d="M668.837,518.946
+			L668.837,518.946v-97.598l0,0h59.2l0,0v97.598l0,0H668.837z"/>
+		<path id="2021-saln-mobile" data-name="2021-saln-mobile" fill="#7F3A39" d="M1100.468,596
+			L1100.468,596V475.304l0,0h25.44l0,0V596l0,0H1100.468z"/>
+	</g>
+	<g id="2020-saln" data-name="2020-saln">
+		<path id="2020-saln-desktop" data-name="2020-saln-desktop" fill="#7F3A39" d="M525.153,518.946
+			L525.153,518.946V297.134l0,0h59.2l0,0v221.812l0,0H525.153z"/>
+		<path id="2020-saln-mobile" data-name="2020-saln-mobile" fill="#7F3A39" d="M1045.651,596
+			L1045.651,596V321.69l0,0h25.44l0,0V596l0,0H1045.651z"/>
+	</g>
+	<g id="2019-saln" data-name="2019-saln">
+		<path id="2019-saln-desktop" data-name="2019-saln-desktop" fill="#7F3A39" d="M381.862,518.946
+			L381.862,518.946v-345.14l0,0h59.2l0,0v345.14l0,0H381.862z"/>
+		<path id="2019-saln-mobile" data-name="2019-saln-mobile" fill="#7F3A39" d="M990.984,596L990.984,596
+			V169.174l0,0h25.44l0,0V596l0,0H990.984z"/>
+	</g>
+	<g id="2018-saln" data-name="2018-saln">
+		<path id="2018-saln-desktop" data-name="2018-saln-desktop" fill="#7F3A39" d="M238.571,518.946
+			L238.571,518.946V96.615l0,0h59.2l0,0v422.331l0,0H238.571z"/>
+		<path id="2018-saln-mobile" data-name="2018-saln-mobile" fill="#7F3A39" d="M936.317,596L936.317,596
+			V73.714l0,0h25.44l0,0V596l0,0H936.317z"/>
+	</g>
+	<g id="2017-saln" data-name="2017-saln">
+		<path id="2017-saln-desktop" data-name="2017-saln-desktop" fill="#7F3A39" d="M95.28,518.946
+			L95.28,518.946V144.527l0,0h59.2l0,0v374.419l0,0H95.28z"/>
+		<path id="2017-saln-mobile" data-name="2017-saln-mobile" fill="#7F3A39" d="M881.65,596L881.65,596
+			V132.965l0,0h25.44l0,0V596l0,0H881.65z"/>
+	</g>
+</g>
+<style>
+#g-saln-web-interactions-img rect, #g-saln-web-interactions-img circle, #g-saln-web-interactions-img path, #g-saln-web-interactions-img line, #g-saln-web-interactions-img polyline, #g-saln-web-interactions-img polygon { vector-effect: non-scaling-stroke; }
+</style>
+</svg>
+
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:7.1442%;margin-top:-9.4px;left:15.5658%;width:105px;">
+			<p class="g-pstyle0">SALN denials</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:8.6302%;margin-top:-17.8px;left:4.6%;width:76px;">
+			<p class="g-pstyle0">Denied</p>
+			<p class="g-pstyle0">requests</p>
+		</div>
+		<div id="2018-anon-desktop" class="g-interactions g-aiAbs g-aiPointText" style="top:10.8238%;margin-top:-26.2px;right:49.7058%;width:115px;">
+			<p class="g-pstyle1">7 out of 9</p>
+			<p class="g-pstyle1">SALN requests</p>
+			<p class="g-pstyle1">were denied</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:15.2817%;margin-top:-9.4px;right:2.223%;width:59px;">
+			<p class="g-pstyle1">100 %</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:18.9967%;margin-top:-9.4px;right:2.207%;width:93px;">
+			<p class="g-pstyle1">of requests</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:30.6722%;margin-top:-9.4px;right:4.5757%;width:38px;">
+			<p class="g-pstyle1">80</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:45.8858%;margin-top:-9.4px;right:4.5757%;width:38px;">
+			<p class="g-pstyle1">60</p>
+		</div>
+		<div id="2021-anon-desktop" class="g-interactions g-aiAbs g-aiPointText" style="top:62.4792%;margin-top:-26.2px;right:11.619%;width:136px;">
+			<p class="g-pstyle1">Over one in five</p>
+			<p class="g-pstyle1">requests for SALN</p>
+			<p class="g-pstyle1">still being denied</p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.2763%;margin-top:-9.4px;right:4.5757%;width:38px;">
+			<p class="g-pstyle1">40</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.6668%;margin-top:-9.4px;right:4.5757%;width:38px;">
+			<p class="g-pstyle1">20</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.8804%;margin-top:-9.4px;right:5.218%;width:30px;">
+			<p class="g-pstyle1">0</p>
+		</div>
+		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.7722%;margin-top:-9.4px;right:86.3528%;width:53px;">
+			<p class="g-pstyle1">2017</p>
+		</div>
+		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.7722%;margin-top:-9.4px;right:68.4358%;width:53px;">
+			<p class="g-pstyle1">2018</p>
+		</div>
+		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.7722%;margin-top:-9.4px;right:50.5187%;width:53px;">
+			<p class="g-pstyle1">2019</p>
+		</div>
+		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.7722%;margin-top:-9.4px;right:32.6017%;width:53px;">
+			<p class="g-pstyle1">2020</p>
+		</div>
+		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.7722%;margin-top:-9.4px;right:14.637%;width:53px;">
+			<p class="g-pstyle1">2021</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-saln-mobile" class="g-artboard" style="max-width: 378px;max-height: 648px" data-aspect-ratio="0.583" data-min-width="0" data-max-width="799">
+<div style="padding: 0 0 171.5042% 0;"></div>
+		<img id="g-saln-mobile-img" class="g-aiImg" alt="" src="saln-mobile.png"/>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="g-aiImg" version="1.2" baseProfile="tiny" id="g-saln-mobile-interactions-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 378 648.286" overflow="visible" xml:space="preserve">
+<g>
+	<g id="2021-annotations-2" data-name="2021-annotations">
+		<g id="arrow-2-desktop-2" data-name="arrow-2-desktop">
+			<path fill="none" stroke="#464646" d="M-125.837,425.331c-5.161-4.198-32.009-27.124-24.722-44.131"/>
+			<g>
+				<polygon fill="#464646" points="-125.695,420.04 -126.689,420.156 -126.111,425.053 -131.038,425.272 -130.992,426.272 
+					-124.992,426.004 				"/>
+			</g>
+		</g>
+		<text transform="matrix(1 0 0 1 -208.8916 345.0402)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">Over one in five</text>
+		<text transform="matrix(1 0 0 1 -226.9521 361.84)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">requests for SALN</text>
+		<text transform="matrix(1 0 0 1 -218.1406 378.6398)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">still being denied</text>
+		<g id="arrow-2-mobile-2" data-name="arrow-2-mobile">
+			<path fill="none" stroke="#464646" d="M292.262,479.137c-2.877-4.9-15.064-27.999,4.813-37.256"/>
+			<g>
+				<polygon fill="#464646" points="294.258,474.228 293.286,473.988 292.111,478.776 287.42,477.254 287.112,478.206 
+					292.825,480.059 				"/>
+			</g>
+		</g>
+	</g>
+	<g id="2018-annotations-2" data-name="2018-annotations">
+		<g id="arrow-1-desktop-2" data-name="arrow-1-desktop">
+			<path fill="none" stroke="#464646" d="M-548.19,99.421c-2.297-32.82,51.847-15.332,51.847-15.332"/>
+			<g>
+				<polygon fill="#464646" points="-544.168,95.959 -544.924,95.303 -548.148,99.034 -551.634,95.546 -552.341,96.254 
+					-548.095,100.501 				"/>
+			</g>
+		</g>
+		<text transform="matrix(1 0 0 1 -477.2122 52.8664)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">7 out of 9</text>
+		<text transform="matrix(1 0 0 1 -510.6467 69.6662)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">SALN requests</text>
+		<text transform="matrix(1 0 0 1 -493.2766 86.466)" fill="#464646" font-family="'Roboto-Regular'" font-size="14px">were denied</text>
+		<g id="arrow-1-mobile-2" data-name="arrow-1-mobile">
+			<path fill="none" stroke="#464646" d="M130.334,77.504c19.332-28.995,27.768,14.928,27.768,14.928"/>
+			<g>
+				<polygon fill="#464646" points="135.606,77.124 135.392,76.146 130.577,77.205 129.872,72.324 128.882,72.468 129.741,78.412 
+									"/>
+			</g>
+		</g>
+	</g>
+	<g id="2021-overall-2" data-name="2021-overall">
+		<path id="2021-overall-desktop-2" data-name="2021-overall-desktop" fill="#C8C8C8" d="M-210.363,523.602
+			L-210.363,523.602V419.351l0,0h59.2l0,0v104.252l0,0H-210.363z"/>
+		<path id="2021-overall-mobile-2" data-name="2021-overall-mobile" fill="#C8C8C8" d="M255.027,600.656
+			L255.027,600.656V471.731l0,0h25.44l0,0v128.926l0,0H255.027z"/>
+	</g>
+	<g id="2020-overall-2" data-name="2020-overall">
+		<path id="2020-overall-desktop-2" data-name="2020-overall-desktop" fill="#C8C8C8" d="M-354.047,523.602
+			L-354.047,523.602V398.5l0,0h59.2l0,0v125.102l0,0H-354.047z"/>
+		<path id="2020-overall-mobile-2" data-name="2020-overall-mobile" fill="#C8C8C8" d="M200.211,600.656
+			L200.211,600.656V445.945l0,0h25.44l0,0v154.711l0,0H200.211z"/>
+	</g>
+	<g id="2019-overall-2" data-name="2019-overall">
+		<path id="2019-overall-desktop-2" data-name="2019-overall-desktop" fill="#C8C8C8" d="M-497.338,523.602
+			L-497.338,523.602V379.868l0,0h59.2l0,0v143.734l0,0H-497.338z"/>
+		<path id="2019-overall-mobile-2" data-name="2019-overall-mobile" fill="#C8C8C8" d="M145.544,600.656
+			L145.544,600.656V422.903l0,0h25.44l0,0v177.753l0,0H145.544z"/>
+	</g>
+	<g id="2018-overall-2" data-name="2018-overall">
+		<path id="2018-overall-desktop-2" data-name="2018-overall-desktop" fill="#C8C8C8" d="M-640.629,523.602
+			L-640.629,523.602V368.334l0,0h59.2l0,0v155.269l0,0H-640.629z"/>
+		<path id="2018-overall-mobile-2" data-name="2018-overall-mobile" fill="#C8C8C8" d="M90.877,600.656
+			L90.877,600.656V408.639l0,0h25.44l0,0v192.017l0,0H90.877z"/>
+	</g>
+	<g id="2017-overall-2" data-name="2017-overall">
+		<path id="2017-overall-desktop-2" data-name="2017-overall-desktop" fill="#C8C8C8" d="M-783.92,523.602
+			L-783.92,523.602V332.844l0,0h59.2l0,0v190.759l0,0H-783.92z"/>
+		<path id="2017-overall-mobile-2" data-name="2017-overall-mobile" fill="#C8C8C8" d="M36.21,600.656
+			L36.21,600.656V364.75l0,0h25.44l0,0v235.906l0,0H36.21z"/>
+	</g>
+	<g id="2021-saln-2" data-name="2021-saln">
+		<path id="2021-saln-desktop-2" data-name="2021-saln-desktop" fill="#7F3A39" d="M-151.163,523.602
+			L-151.163,523.602v-97.597l0,0h59.2l0,0v97.597l0,0H-151.163z"/>
+		<path id="2021-saln-mobile-2" data-name="2021-saln-mobile" fill="#7F3A39" d="M280.467,600.656
+			L280.467,600.656V479.96l0,0h25.44l0,0v120.696l0,0H280.467z"/>
+	</g>
+	<g id="2020-saln-2" data-name="2020-saln">
+		<path id="2020-saln-desktop-2" data-name="2020-saln-desktop" fill="#7F3A39" d="M-294.847,523.602
+			L-294.847,523.602V301.79l0,0h59.2l0,0v221.812l0,0H-294.847z"/>
+		<path id="2020-saln-mobile-2" data-name="2020-saln-mobile" fill="#7F3A39" d="M225.651,600.656
+			L225.651,600.656v-274.31l0,0h25.44l0,0v274.31l0,0H225.651z"/>
+	</g>
+	<g id="2019-saln-2" data-name="2019-saln">
+		<path id="2019-saln-desktop-2" data-name="2019-saln-desktop" fill="#7F3A39" d="M-438.138,523.602
+			L-438.138,523.602v-345.14l0,0h59.2l0,0v345.14l0,0H-438.138z"/>
+		<path id="2019-saln-mobile-2" data-name="2019-saln-mobile" fill="#7F3A39" d="M170.984,600.656
+			L170.984,600.656V173.83l0,0h25.44l0,0v426.826l0,0H170.984z"/>
+	</g>
+	<g id="2018-saln-2" data-name="2018-saln">
+		<path id="2018-saln-desktop-2" data-name="2018-saln-desktop" fill="#7F3A39" d="M-581.429,523.602
+			L-581.429,523.602V101.271l0,0h59.2l0,0v422.331l0,0H-581.429z"/>
+		<path id="2018-saln-mobile-2" data-name="2018-saln-mobile" fill="#7F3A39" d="M116.317,600.656
+			L116.317,600.656V78.37l0,0h25.44l0,0v522.286l0,0H116.317z"/>
+	</g>
+	<g id="2017-saln-2" data-name="2017-saln">
+		<path id="2017-saln-desktop-2" data-name="2017-saln-desktop" fill="#7F3A39" d="M-724.72,523.602
+			L-724.72,523.602V149.183l0,0h59.2l0,0v374.419l0,0H-724.72z"/>
+		<path id="2017-saln-mobile-2" data-name="2017-saln-mobile" fill="#7F3A39" d="M61.65,600.656
+			L61.65,600.656V137.621l0,0h25.44l0,0v463.035l0,0H61.65z"/>
+	</g>
+</g>
+<style>
+#g-saln-mobile-interactions-img rect, #g-saln-mobile-interactions-img circle, #g-saln-mobile-interactions-img path, #g-saln-mobile-interactions-img line, #g-saln-mobile-interactions-img polyline, #g-saln-mobile-interactions-img polygon { vector-effect: non-scaling-stroke; }
+</style>
+</svg>
+
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:4.7487%;margin-top:-17.8px;left:9.7354%;width:76px;">
+			<p class="g-pstyle0">Denied</p>
+			<p class="g-pstyle0">requests</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:3.453%;margin-top:-9.4px;left:30.3427%;width:105px;">
+			<p class="g-pstyle0">SALN denials</p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:9.7774%;margin-top:-9.4px;right:5.0758%;width:59px;">
+			<p class="g-pstyle1">100 %</p>
+		</div>
+		<div id="of-requests-mobile" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:12.5539%;margin-top:-9.4px;right:5.042%;width:93px;">
+			<p class="g-pstyle1">of requests</p>
+		</div>
+		<div id="2018-anon-mobile" class="g-interactions g-aiAbs g-aiPointText" style="top:15.6081%;margin-top:-26.2px;right:35.335%;width:115px;">
+			<p class="g-pstyle1">7 out of 9</p>
+			<p class="g-pstyle1">SALN requests</p>
+			<p class="g-pstyle1">were denied</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:26.2824%;margin-top:-9.4px;right:9.684%;width:38px;">
+			<p class="g-pstyle1">80</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:42.9418%;margin-top:-9.4px;right:9.684%;width:38px;">
+			<p class="g-pstyle1">60</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.6011%;margin-top:-9.4px;right:9.684%;width:38px;">
+			<p class="g-pstyle1">40</p>
+		</div>
+		<div id="2021-anon-mobile" class="g-interactions g-aiAbs g-aiPointText" style="top:64.5063%;margin-top:-26.2px;right:5.067%;width:118px;">
+			<p class="g-pstyle1">Over one in five</p>
+			<p class="g-pstyle1">requests for </p>
+			<p class="g-pstyle1">SALN denied</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.1061%;margin-top:-9.4px;right:9.684%;width:38px;">
+			<p class="g-pstyle1">20</p>
+		</div>
+		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:92.7655%;margin-top:-9.4px;right:11.8371%;width:30px;">
+			<p class="g-pstyle1">0</p>
+		</div>
+		<div id="g-ai1-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.159%;margin-top:-9.4px;right:80.1995%;width:53px;">
+			<p class="g-pstyle1">2017</p>
+		</div>
+		<div id="g-ai1-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.159%;margin-top:-9.4px;right:65.6328%;width:53px;">
+			<p class="g-pstyle1">2018</p>
+		</div>
+		<div id="g-ai1-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.159%;margin-top:-9.4px;right:51.066%;width:53px;">
+			<p class="g-pstyle1">2019</p>
+		</div>
+		<div id="g-ai1-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.159%;margin-top:-9.4px;right:36.7634%;width:53px;">
+			<p class="g-pstyle1">2020</p>
+		</div>
+		<div id="g-ai1-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.159%;margin-top:-9.4px;right:22.1597%;width:53px;">
+			<p class="g-pstyle1">2021</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2022-04-17 18:09 -->
+
+</div>
+</div>
+
+<div class="scrolly-overlay">
+  <div class="step" id="step-zero">
+	<p>The number </p>
+  </div>
+  <div class="step" id="step-one">
+	<p>This chart tracks <strong>additional minutes spent by commuters</strong> during peak hours inside New York City's trains.</p>
+  </div>
+  <div class="step" id="step-two">
+	<p>On average, commuters are now spending an additional 26 seconds on board trains than usual. That's the <strong>the longest since March 2020.</strong></p>
+  </div>
+  <div class="step" id="step-three">
+	<p>In some lines, travel tends to be longer than average like in <span style="background: #9368bd">B-line</span></p>
+  </div>
+  <div class="step" id="step-four">
+	<p>While in some like in the <span style="background: green">6-line</span>, travel time has significantly improved.</p>
+  </div>
+  <div class="step" id="step-five">
+	<p>In total, riding <strong>11 out of the 25</strong> train lines would mean additional time spent onboard toward your destination as of February.</p>
+  </div>
+</div>
+</section>
+
+
+
+
+
+<script>
+
+	function hideNote() {
+			d3.selectAll("[data-name='arrows']").classed('hidden', true)
+			d3.selectAll("[data-name='lockdowns-imposed']").classed('hidden', true)
+			d3.selectAll("[data-name='lockdowns-lifted']").classed('hidden', true)
+			d3.select("#g-ai0-6").classed('hidden',true)
+			d3.select("#g-ai0-7").classed('hidden',true)
+			d3.select("#g-ai0-9").classed('hidden',true)
+			d3.select("#g-ai1-6").classed('hidden',true)
+			d3.select("#g-ai1-7").classed('hidden',true)
+			d3.select("#g-ai1-9").classed('hidden',true)
+		 }
+	
+	function showNote() {
+			d3.selectAll("[data-name='arrows']").classed('hidden', false)
+			d3.selectAll("[data-name='lockdowns-imposed']").classed('hidden', false)
+			d3.selectAll("[data-name='lockdowns-lifted']").classed('hidden', false)
+			d3.select("#g-ai0-6").classed('hidden',false)
+			d3.select("#g-ai0-7").classed('hidden',false)
+			d3.select("#g-ai0-9").classed('hidden',false)
+			d3.select("#g-ai1-6").classed('hidden',false)
+			d3.select("#g-ai1-7").classed('hidden',false)
+			d3.select("#g-ai1-9").classed('hidden',false)
+		 }
+	
+	function showlarge() {
+	  d3.selectAll("[data-name='longer']").classed('hidden', false)
+	  d3.select("#g-ai0-4").classed('hidden',false)
+	  d3.select("#g-ai1-4").classed('hidden',false)
+	
+	}
+	
+	function showsmall() {
+	  d3.selectAll("[data-name='shortest']").classed('hidden', false)
+	  d3.select("#g-ai0-11").classed('hidden',false)
+	  d3.select("#g-ai1-11").classed('hidden',false)
+	}
+	
+	function hidesmall() {
+	  d3.selectAll("[data-name='shortest']").classed('hidden', true)
+	  d3.select("#g-ai0-11").classed('hidden',true)
+	  d3.select("#g-ai1-11").classed('hidden',true)
+	}
+	
+	function hidelarge() {
+	  d3.selectAll("[data-name='longer']").classed('hidden', true)
+	  d3.select("#g-ai0-4").classed('hidden',true)
+	  d3.select("#g-ai1-4").classed('hidden',true)
+	}
+	
+	function hideLines() {
+	  d3.selectAll("[data-name='line-1']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-2']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-3']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-4']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-5']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-6']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-7']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-a']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-b']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-c']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-d']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-e']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-f']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-g']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-l']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-m']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-n']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-q']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-r']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-s42']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-srock']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-sf']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-w']").classed('hidden', true)
+	  d3.selectAll("[data-name='line-jz']").classed('hidden', true)
+	}
+	
+	function showLines() {
+	  d3.selectAll("[data-name='line-1']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-2']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-3']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-4']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-5']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-6']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-7']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-a']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-b']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-c']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-d']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-e']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-f']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-g']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-l']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-m']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-n']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-q']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-r']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-s42']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-srock']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-sf']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-w']").classed('hidden', false)
+	  d3.selectAll("[data-name='line-jz']").classed('hidden', false)
+	}
+		  
+		  /* Scrollytelling code goes under here */
+		  // step-0
+		  hideNote()
+		  hidelarge()
+		  hidesmall()
+	
+		  // step-1
+		  //undo step-2
+		  d3.select("#step-one").on('stepin', function(e) {
+			console.log("Got to step one")
+			hideNote()
+			hidesmall()
+			hidelarge()
+			showLines()
+		  })
+	
+		  //step-2
+	
+		  d3.select("#step-two").on('stepin', function(e) {
+			console.log("Got to step two")
+	
+			//undo step-3
+			d3.selectAll("[data-name='average']")
+			d3.selectAll("[data-name='line-b']").classed('hidden', true)
+	
+		  showNote()
+		  hidesmall()
+		  hidelarge()
+		  hideLines()
+		  })
+	
+		  // step-3
+	
+		  d3.select("#step-three").on('stepin', function(e) {
+			console.log("Got to step three")
+	
+			//undo step-4
+			hidesmall()
+			d3.selectAll("[data-name='line-6']").classed('hidden', true)
+	
+	
+			d3.selectAll("[data-name='average']")
+			d3.selectAll("[data-name='line-b']").classed('hidden', false)
+			showlarge()
+			hideNote()
+		  })
+	
+		  //step-4
+		  d3.select("#step-four").on('stepin', function(e) {
+			console.log("Got to step four")
+	
+			//undo step-5
+			d3.selectAll("[data-name='line-1']").classed('hidden', true)
+			d3.selectAll("[data-name='line-7']").classed('hidden', true)
+			d3.selectAll("[data-name='line-a']").classed('hidden', true)
+			d3.selectAll("[data-name='line-b']").classed('hidden', true)
+			d3.selectAll("[data-name='line-d']").classed('hidden', true)
+			d3.selectAll("[data-name='line-e']").classed('hidden', true)
+			d3.selectAll("[data-name='line-g']").classed('hidden', true)
+			d3.selectAll("[data-name='line-jz']").classed('hidden', true)
+			d3.selectAll("[data-name='line-l']").classed('hidden', true)
+			d3.selectAll("[data-name='line-m']").classed('hidden', true)
+			d3.selectAll("[data-name='line-n']").classed('hidden', true)
+			d3.selectAll("[data-name='line-q']").classed('hidden', true)
+	
+			d3.selectAll("[data-name='line-b']").classed('hidden', true)
+			hidelarge()
+			showsmall()
+			d3.selectAll("[data-name='line-6']").classed('hidden', false)
+	
+			d3.selectAll("[data-name^='line-1'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-7'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-a'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-b'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-d'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-e'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-g'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-jz'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-l'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-m'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-n'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-q'] path").style('opacity', 1)
+			d3.selectAll("[data-name^='line-6'] path").style('opacity', 1)
+	
+			d3.selectAll("[data-name^='line-1'] path").attr('stroke', '#D62728')
+			d3.selectAll("[data-name^='line-7'] path").attr('stroke', '#98DF8A')
+			d3.selectAll("[data-name^='line-a'] path").attr('stroke', '#FF9896')
+			d3.selectAll("[data-name^='line-b'] path").attr('stroke', '#9467BD')
+			d3.selectAll("[data-name^='line-d'] path").attr('stroke', '#8C564B')
+			d3.selectAll("[data-name^='line-e'] path").attr('stroke', '#C49C94')
+			d3.selectAll("[data-name^='line-g'] path").attr('stroke', '#F7B6D2')
+			d3.selectAll("[data-name^='line-jz'] path").attr('stroke', '#7F7F7F')
+			d3.selectAll("[data-name^='line-l'] path").attr('stroke', '#C7C7C7')
+			d3.selectAll("[data-name^='line-m'] path").attr('stroke', '#BCBD22')
+			d3.selectAll("[data-name^='line-n'] path").attr('stroke', '#DBDB8D')
+			d3.selectAll("[data-name^='line-q'] path").attr('stroke', '#17BECF')
+			d3.selectAll("[data-name^='line-6'] path").attr('stroke', '#2CA02C')
+		  })
+	
+		   //step-5
+		   d3.select("#step-five").on('stepin', function(e) {
+			console.log("Got to step five")
+			d3.selectAll("[data-name='line-1']").classed('hidden', false)
+			d3.selectAll("[data-name='line-7']").classed('hidden', false)
+			d3.selectAll("[data-name='line-a']").classed('hidden', false)
+			d3.selectAll("[data-name='line-b']").classed('hidden', false)
+			d3.selectAll("[data-name='line-d']").classed('hidden', false)
+			d3.selectAll("[data-name='line-e']").classed('hidden', false)
+			d3.selectAll("[data-name='line-g']").classed('hidden', false)
+			d3.selectAll("[data-name='line-jz']").classed('hidden', false)
+			d3.selectAll("[data-name='line-l']").classed('hidden', false)
+			d3.selectAll("[data-name='line-m']").classed('hidden', false)
+			d3.selectAll("[data-name='line-n']").classed('hidden', false)
+			d3.selectAll("[data-name='line-q']").classed('hidden', false)
+			d3.selectAll("[data-name='line-6']").classed('hidden', true)
+			hidesmall()
+	
+			d3.selectAll("[data-name^='line-1'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-7'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-a'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-b'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-d'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-e'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-g'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-jz'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-l'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-m'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-n'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-q'] path").style('opacity', 0.3)
+			d3.selectAll("[data-name^='line-6'] path").style('opacity', 0.3)
+	
+			d3.selectAll("[data-name^='line-1'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-7'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-a'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-b'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-d'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-e'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-g'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-jz'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-l'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-m'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-n'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-q'] path").attr('stroke', 'grey')
+			d3.selectAll("[data-name^='line-6'] path").attr('stroke', 'grey')
+		   })
+	
+	
+	
+		</script>
+	
+	<script>
+		const scroller = scrollama();
+	
+		scroller
+			.setup({
+				step: "#scrolly .scrolly-overlay .step",
+				offset: 0.7,
+				debug: false
+			})
+			.onStepEnter(function({ element, index, direction}) {
+				const event = new CustomEvent('stepin', { detail: { direction: direction } })
+				element.dispatchEvent(event);
+			})
+			.onStepExit(function({ element, index, direction }) {
+				const event = new CustomEvent('stepout', { detail: { direction: direction } })
+				element.dispatchEvent(event);
+			});
+	
+		window.addEventListener("resize", scroller.resize);
+		</script>
+
+<script type="text/javascript">
+	(function() {
+		// only want one resizer on the page
+		if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+		document.documentElement.className += " g-resizer-v3-init";
+		// require IE9+
+		if (!("querySelector" in document)) return;
+		function resizer() {
+			var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+				widthById = {};
+			elements.forEach(function(el) {
+				var parent = el.parentNode,
+					width = widthById[parent.id] || parent.getBoundingClientRect().width,
+					minwidth = el.getAttribute("data-min-width"),
+					maxwidth = el.getAttribute("data-max-width");
+				widthById[parent.id] = width;
+
+				if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+					el.style.display = "block";
+				} else {
+					el.style.display = "none";
+				}
+			});
+			try {
+				if (window.parent && window.parent.$) {
+					window.parent.$("body").trigger("resizedcontent", [window]);
+				}
+				if (window.require) {
+					require(['foundation/main'], function() {
+						require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+							AppCommunicator.triggerResize();
+						});
+					});
+				}
+			} catch(e) { console.log(e); }
+		}
+
+		document.addEventListener('DOMContentLoaded', resizer);
+		// feel free to replace throttle with _.throttle, if available
+		window.addEventListener('resize', throttle(resizer, 200));        
+
+		function throttle(func, wait) {
+			// from underscore.js
+			var _now = Date.now || function() { return new Date().getTime(); },
+				context, args, result, timeout = null, previous = 0;
+			var later = function() {
+				previous = _now();
+				timeout = null;
+				result = func.apply(context, args);
+				if (!timeout) context = args = null;
+			};
+			return function() {
+				var now = _now(), remaining = wait - (now - previous);
+				context = this;
+				args = arguments;
+				if (remaining <= 0 || remaining > wait) {
+					if (timeout) {
+						clearTimeout(timeout);
+						timeout = null;
+					}
+					previous = now;
+					result = func.apply(context, args);
+					if (!timeout) context = args = null;
+				} else if (!timeout && options.trailing !== false) {
+					timeout = setTimeout(later, remaining);
+				}
+				return result;
+			};
+		}
+
+	   
+	})();
+</script>
+	
+	<script src="https://pmagtulis.github.io/projects/socials.js"></script>
+
+</body>
+<footer class="footer">
+  <div class="content has-text-centered">
+	<p>
+	  Made using Bulma by <a href="mailto:ppm2130@columbia.edu">Prinz Magtulis</a>. Copyright 2022.
+	</p>
+  </div>
+</footer>
+</html>	
+
