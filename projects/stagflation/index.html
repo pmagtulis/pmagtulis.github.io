@@ -5,14 +5,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8" />
-        <meta property="og:title" content="Stagflation risks: GDP slumps as inflation pops in the US">
+        <meta property="og:title" content="Stagflation risks? GDP slumps as inflation pops in the US">
         <meta property="og:description" content="Q1 GDP surprises on the downside, raising concern the world's largest economy is losing steam">
         <meta property="og:type" content="article">
         <meta property="og:image" content="https://pmagtulis.github.io/charts/balloon.jpeg">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:creator" content="@prinzmagtulis">
     
-        <title>Stagflation risks: GDP slumps as inflation pops in the US | Prinz Magtulis</title>
+        <title>Stagflation risks? GDP slumps as inflation pops in the US | Prinz Magtulis</title>
         <style>
       #scrolly {
         position: relative;
@@ -145,7 +145,7 @@
     <section class="hero is-large has-bg-img"> 
 		<div class="hero-body"> <div class="container">
 			<div class="block">
-			<h1 class="title has-text-bold">Stagflation risks: GDP slumps as inflation pops in the US</h1> 
+			<h1 class="title has-text-bold">Stagflation risks? GDP slumps as inflation pops in the US</h1> 
 			<h2 class="subtitle"><em>Q1 GDP surprises on the downside, raising concern the world's largest economy is losing steam</em></h2>
 			<br>
 			<p><em>May 1, 2022</em></p>
@@ -812,13 +812,13 @@
 
         <div class="scrolly-overlay">
           <div class="step" id="step-zero">
-            <p>It is normal for inflation to go up or down</p>
+            <p>It is normal for <span style="background: #d62728"><span class="has-text-white">inflation</span></span> to go up or down</p>
           </div>
           <div class="step" id="step-one">
             <p>But during crises, price swings tend to be larger or smaller than usual.</p>
           </div>
           <div class="step" id="step-two">
-            <p>In June 2002, inflation hit a <span style="background: #d62728">low of 1.1% </span>, over a year after the 9/11 attacks crippled the economy.</p>
+            <p>In June 2002, inflation hit a low of 1.1%, over a year after the 9/11 attacks crippled the economy.</p>
           </div>
           <div class="step" id="step-three">
             <p>The global financial crisis handed the economy a heavier damage though, resulting in a deflation in 2009 which means prices were instead getting lower.</p>
@@ -827,7 +827,7 @@
             <p>The pandemic had a slightly similar effect of depressing prices due to economic inactivity.</p>
           </div>
 		  <div class="step" id="step-five">
-            <p>But when the economy reopened, inflation came back with a vengeance. From about 2% in March 2021..</p>
+            <p>But when the economy reopened, inflation came back with a vengeance. From <strong>about 2%</strong> in March 2021..</p>
           </div>
 		  <div class="step" id="step-six">
             <p>...it accelerated to <strong>8.5% in March 2022</strong>.</p>
@@ -964,7 +964,7 @@
       }
 
 	  function showall() {
-        // annotation: #hide everything
+        // annotation: #show everything
         d3.selectAll(".g-crisis").classed('hidden', false)
 		d3.selectAll("[data-name='arrow-2']").classed('hidden', false)
 		d3.selectAll("[data-name='arrow-3']").classed('hidden', false)
@@ -977,14 +977,36 @@
 		d3.selectAll("[data-name='red-line-b']").classed('hidden', false)
 		d3.selectAll("[data-name='red-line-a']").classed('hidden', false)
       }
+
+	  function showchartonly() {
+        // annotation: #show just charts
+		d3.selectAll("[data-name='red-line-e']").classed('hidden', false)
+		d3.selectAll("[data-name='red-line-d']").classed('hidden', false)
+		d3.selectAll("[data-name='red-line-c']").classed('hidden', false)
+		d3.selectAll("[data-name='red-line-b']").classed('hidden', false)
+		d3.selectAll("[data-name='red-line-a']").classed('hidden', false)
+		d3.selectAll(".g-crisis").classed('hidden', true)
+		d3.selectAll("[data-name='arrow-2']").classed('hidden', true)
+		d3.selectAll("[data-name='arrow-3']").classed('hidden', true)
+		d3.selectAll(".g-jun-2022").classed('hidden', true)
+		d3.selectAll("[data-name='arrow']").classed('hidden', true)
+		d3.selectAll(".g-pandemic").classed('hidden', true)
+      }
       
       /* Scrollytelling code goes under here */
 
+	  d3.select("#step-zero").on('stepin', function(e) {
+        console.log("Got to step zero")
 
-      d3.select("#step-one").on('stepout', function(e) {
+        // do changes for step zero
+        showchartonly() 
+
+	  })
+	 
+	  d3.select("#step-one").on('stepout', function(e) {
         if(e.detail.direction === 'up') {
           // undo the changes from step one
-		showall()
+		showchart()
         }
       })
 
@@ -1064,7 +1086,7 @@
 	</div>
 	<div class="block">
 		Another contention is whether the weakness in the economy represents a more structural phenomenon that tends to linger longer. 
-		This may not be the case, according to Carl Weinberg, chief economist at High Frequency Economics, who said last September that spiking consumer prices is a "temporary" impact of higher oil prices because of the Ukraine war.
+		This may not be the case, according to Carl Weinberg, chief economist at High Frequency Economics, who said <a href="https://www.cnbc.com/2021/09/29/this-is-not-1973-economist-rules-out-stagflation-and-persistent-price-pressures.html" target="_blank">last September</a> that spiking consumer prices is a "temporary" impact of higher oil prices because of the Ukraine war.
 	</div>
 	<div class="block">
 		Jeffrey Frankel, economics professor at Harvard Kennedy School, agreed, pointing out that much of the "negative surprise" on the latest GDP number "was made up entirely of a rise in imports." 
@@ -1522,13 +1544,13 @@
 
 <div class="scrolly-overlay">
 	<div class="step" id="step-seven">
-	  <p>Like inflation, US GDP has had its highs and lows.</p>
+	  <p>Like inflation, <span style="background: #0397cc"><span class="has-text-white">US GDP</span></span> has had its highs and lows.</p>
 	</div>
 	<div class="step" id="step-eight">
 	  <p>The oil crisis, for instance, pushed GDP down 8% on an annual basis in the second quarter of 1980.</p>
 	</div>
 	<div class="step" id="step-nine">
-	  <p>The financial crisis, meanwhile, prompted a <span style="background: #0397cc">recession </span>, which is defined as two successive quarters of contraction.</p>
+	  <p>The financial crisis, meanwhile, prompted a <strong>recession </strong>, which is defined as two successive quarters of contraction.</p>
 	</div>
 	<div class="step" id="step-ten">
 	  <p>At the peak of the pandemic, the economy also shrank by most since 1960.</p>
