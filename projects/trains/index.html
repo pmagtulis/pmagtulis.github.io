@@ -93,48 +93,32 @@
 		background-size:cover; 
 	}
 
-	.share-btn-container {
-		  background: #fff;
-		  display: flex;
-		  flex-direction: column;
-		  padding: 16px;
-		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-		  position: fixed;
-		  top: 70%;
-		  transform: translateY(-70%);
-	  }
-	  .share-btn-container a i {
+	.share-btn-container a i {
 		  font-size: 24px;
-	  }
-	  .share-btn-container a{
-		  margin: 12px 0;
+          margin: 8px 0;
 		  transition: 500ms;
-	  }
-	  .share-btn-container a:hover {
-		  transform: scale(1.2);
+          padding: 8px;
 	  }
 
-	  @media (max-width: 550px) {
-		.content {
-			padding: 8px 32px;
-		}
-		.share-btn-container {
-			transform: unset;
-			top: unset;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
-			flex-direction: row;
-			z-index: 1000;
-			padding: 16px 0;
-			justify-content: center;
-		}
-		.share-btn-container a {
-			margin: 0 32px;
+      .share-btn-container a:hover {
+		  transform: scale(1.5);
+      }
 
-		}
-	  }
+      .share-btn-container .fa-facebook {
+          color: #fff
+      }
+
+      .share-btn-container .fa-twitter {
+          color: #fff
+      }
+
+      .share-btn-container .fa-linkedin {
+          color: #fff
+      }
+
+      .share-btn-container .fa-whatsapp {
+          color: #fff
+      }
 </style>
 
 	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
@@ -151,6 +135,20 @@
 			  <a class="navbar-item" href="https://pmagtulis.github.io/projects/">
 				Return to projects page
 			  </a>
+			  <div class="share-btn-container">
+				<a href="#" class="facebook-btn">
+				  <i class="fab fa-facebook"></i>
+				</a>
+				<a href="#" class="twitter-btn">
+				  <i class="fab fa-twitter"></i>
+				</a>
+				<a href="#" class="linkedin-btn">
+				  <i class="fab fa-linkedin"></i>
+				</a>
+				<a href="#" class="whatsapp-btn">
+				  <i class="fab fa-whatsapp"></i>
+				</a>
+				</div>
 			  </div>
 			  <div class="navbar-end">
 			  <a class="navbar-item" href="https://pmagtulis.github.io/">
@@ -167,26 +165,6 @@
 			<br>
 			<em>April 5, 2022</em>
 		</div> </div> 
-
-		<div class="share-btn-container">
-			<a href="#" class="facebook-btn">
-			  <i class="fab fa-facebook"></i>
-			</a>
-		  
-			<a href="#" class="twitter-btn">
-			  <i class="fab fa-twitter"></i>
-			</a>
-		  
-			<a href="#" class="linkedin-btn">
-			  <i class="fab fa-linkedin"></i>
-			</a>
-		  
-			<a href="#" class="whatsapp-btn">
-			  <i class="fab fa-whatsapp"></i>
-			</a>
-		  
-		  </div>
-
 	</section>
 	<br>
 	<div class="container column is-half-desktop is-full-mobile is-full-tablet">
