@@ -98,7 +98,7 @@
           padding: 8px;
 	  }
 
-      .share-btn-container a:hover {
+	  .share-btn-container a:hover {
 		  transform: scale(1.5);
       }
 
@@ -127,10 +127,9 @@
 
   <body>
 	<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-			<div class="navbar-start">
-			  <a class="navbar-item has-text-white" href="https://pmagtulis.github.io/projects/">
-				Return to projects page
-			  </a>
+		<div class="navbar-brand">
+		<div class="navbar-start">
+			<div class="navbar-item">
 			  <div class="share-btn-container">
 				<a href="#" class="facebook-btn">
 				  <i class="fab fa-facebook"></i>
@@ -145,14 +144,28 @@
 				  <i class="fab fa-whatsapp"></i>
 				</a>
 				</div>
-			  </div>
-			  <div class="navbar-end">
-			  <a class="navbar-item has-text-white" href="https://pmagtulis.github.io/">
-				Prinz Magtulis
+				</div>
+				</div>
+
+				<a class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				  </a>
+				  </div>
+
+					<div class="navbar-menu" id="nav-links">
+						<div class="navbar-end">
+						  <a class="navbar-item" href="https://pmagtulis.github.io/projects/">
+							Back to projects page
+						  </a>
+			  <a class="navbar-item" href="https://pmagtulis.github.io/">
+				Back to homepage
 			  </a>
 			  </div>
-			  </div>
+			</div>
 			  </nav>
+
     <section class="hero is-large has-bg-img"> 
 		<div class="hero-body"> <div class="container">
 			<div class="block">
@@ -2126,6 +2139,7 @@
   })();
 </script>
 <script src="https://pmagtulis.github.io/projects/socials.js"></script>
+<script src="https://pmagtulis.github.io/projects/mobile.js"></script>
 
 </body>
 <footer class="footer">
