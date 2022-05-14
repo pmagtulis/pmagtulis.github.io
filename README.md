@@ -7,10 +7,6 @@ projects, both personal and in fulfillment of requirements for my graduate degre
 
 # What's in here?
 
-|**Directory/File**|**Contents**|
-|---|---|
-|*charts*|Contains all image (.png, .svg) files used in the website|
-
 Each directory corresponds to a webpage and contains all files related to them, including notebooks, ai2html files, and html pages.
 
 # Contact
