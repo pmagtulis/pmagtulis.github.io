@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/092b142fb0.js" crossorigin="anonymous"></script>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>The scale of government debt awaiting Marcos 2.0 administration | Prinz Magtulis</title>
+	<meta charset="utf-8" />
+    <meta property="og:title" content="The scale of government debt awaiting Marcos 2.0 administration">
+	<meta property="og:description" content="Philippines at rising risk of a fiscal crisis after debt binge during pandemic.">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://pmagtulis.github.io/charts/bbm.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@prinzmagtulis">
+</head>
+
+<style>
+	.share-btn-container a i {
+	  font-size: 24px;
+	  margin: 8px 0;
+	  transition: 500ms;
+	  padding: 8px;
+  }
+
+  .share-btn-container i:hover {
+	color: #485fc7;
+  }
+
+  .share-btn-container .fa-facebook {
+	  color: #fff
+  }
+
+  .share-btn-container .fa-twitter {
+	  color: #fff
+  }
+
+  .share-btn-container .fa-linkedin {
+	  color: #fff
+  }
+
+  .share-btn-container .fa-whatsapp {
+	  color: #fff
+  }
+</style>
+
+
+<body onload="main()">
+
+	  <!-- nav bar -->
+	  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+		<div class="navbar-start">
+			<div class="navbar-item">
+			  <div class="share-btn-container">
+				<a href="#" class="facebook-btn">
+				  <i class="fab fa-facebook"></i>
+				</a>
+				<a href="#" class="twitter-btn">
+				  <i class="fab fa-twitter"></i>
+				</a>
+				<a href="#" class="linkedin-btn">
+				  <i class="fab fa-linkedin"></i>
+				</a>
+				<a href="#" class="whatsapp-btn">
+				  <i class="fab fa-whatsapp"></i>
+				</a>
+				</div>
+				</div>
+				</div>
+
+				<a class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				  </a>
+				  </div>
+
+					<div class="navbar-menu" id="nav-links">
+						<div class="navbar-end">
+						  <a class="navbar-item" href="https://pmagtulis.github.io/projects/">
+							Back to projects page
+						  </a>
+			  <a class="navbar-item" href="https://pmagtulis.github.io/">
+				Back to homepage
+			  </a>
+			  </div>
+			</div>
+			  </nav>
+
+
+     <!-- title -->
+    <div class="container">
+		<section class="section">
+        <p class="title has-text-centered">The scale of government debt awaiting Marcos 2.0 administration</p>
+        <p class="has-text-centered"><em>Philippines at rising risk of a fiscal crisis after debt binge during pandemic</em> </p>
+        <p class="has-text-centered"><em>May 23, 2022</em></p>
+
+	   <!-- main -->
+	<div class="container column is-half-desktop is-full-mobile is-full-tablet">
+
+		<script>
+
+			function main() {
+				var width = 1400,
+				height = 1000;
+				var data = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022];
+				dataset = [50.2, 48.8, 49.2, 47.1, 43.4, 42.7, 40.2, 40.2, 39.9, 39.6, 54.5, 60.1, 63.5];
+
+				var svg = d3.select('body')
+						.append('svg')
+						.attr('width', width)
+						.attr('height', height);
+
+				var xScale = d3.scaleLinear()
+						.domain([d3.min(data), d3.max(data)])
+						.range([0, width - 100]);
+				
+				var x_axis = d3.axisBottom()
+						.scale(xScale)
+						.tickSize(20,0)   // size of ticks
+						.tickPadding([20])   // spacing between ticks and text
+						.tickFormat(d3.format("d")); // removing commas in text
+				
+				svg.append('g')
+						.attr('transform', 'translate(70,100)') // padding and positioning of whole chart
+						.style("stroke-width", 4) // increase stroke width of axis
+						.style("font", "18px times") // increase font size of axis labels
+						.call(x_axis);
+				
+				var circle = svg.append("circle")
+						.attr("cx", 70)
+						.attr("cy", 50)
+						.style("fill", "maroon")
+						.attr("r", 50.2);
+						
+				
+				circle.transition()
+						.attr("cx", 180) // horizontal movement
+						.delay(2000) // specifies the seconds waited before the object moves when page loads
+						.duration(1500)
+						.transition()
+						.attr("r", 40)
+						.transition()
+						.attr("cx", 290) // horizontal movement
+						.delay(2000) // specifies the seconds waited before the object moves when page loads
+						.duration(1500)
+						.transition()
+						.attr("r", 45);
+			}
+
+
+
+
+		</script>
+
+
+
+
+
+	</div>
+</body>
+</html>
