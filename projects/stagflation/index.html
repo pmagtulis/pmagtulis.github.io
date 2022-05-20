@@ -998,6 +998,13 @@
       
       /* Scrollytelling code goes under here */
 
+	  d3.select("#step-zero").on('stepout', function(e) {
+        if(e.detail.direction === 'up') {
+          // undo the changes from step zero
+		showall()
+        }
+      }) 
+	 
 	  d3.select("#step-zero").on('stepin', function(e) {
         console.log("Got to step zero")
 
@@ -1938,10 +1945,11 @@
 		/* Scrollytelling code goes under here */
   
   
+		
 		d3.select("#step-seven").on('stepout', function(e) {
 		  if(e.detail.direction === 'up') {
 			// undo the changes from step eight
-		  showgdpchart()
+		  showgdpall()
 		  }
 		})
 
