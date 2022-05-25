@@ -8,7 +8,7 @@
     <meta property="og:title" content="Duterte's freedom of information is not so free">
 	<meta property="og:description" content="FOI has improved information access. But gov't has also kept sensitive ones under wraps.">
 	<meta property="og:type" content="article">
-	<meta property="og:image" content="https://pmagtulis.github.io/charts/duterte-foi.jpeg">
+	<meta property="og:image" content="https://pmagtulis.github.io/assets/duterte-foi.jpeg">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:creator" content="@prinzmagtulis">
 
@@ -89,7 +89,7 @@
 
 <style>
 	.has-bg-img { 
-		background: url("https://pmagtulis.github.io/charts/duterte-foi.jpeg"); 
+		background: url("https://pmagtulis.github.io/assets/duterte-foi.jpeg"); 
 		background-size:cover; 
 	}
 
@@ -898,7 +898,7 @@
 		Recently, BIR denied separate FOI requests from ABS-CBN, <a href="https://twitter.com/Ted_Cordero/status/1516723467911307268" target="_blank">GMA News</a> and <a href="https://twitter.com/lianbuan/status/1516782267120910339" target="_blank">Rappler</a>, asking for a copy of the bureau's payment demand to former senator Ferdinand "Bongbong" Marcos Jr., the frontrunner in the presidential polls being asked to settle P203 billion worth estate taxes, inclusive of surcharges and interest, following a Supreme Court ruling against his family.
 	</div>
 	<figure class="image is-fullwidth-centered">
-        <img src="https://pmagtulis.github.io/charts/FOI-rejection.png" alt="An FOI request on the BIR's demand letter for the Marcoses was denied.">
+        <img src="https://pmagtulis.github.io/assets/FOI-rejection.png" alt="An FOI request on the BIR's demand letter for the Marcoses was denied.">
         <figcaption><em><small>An FOI request dated April 21, 2022 was denied on the same day by the Bureau of Internal Revenue.</em> Source: FOI portal</small></figcaption>
        </figure>
 	   <br>
@@ -927,7 +927,7 @@
 		After a series of back and forth, the department granted Co's request last March 16, but only the annex was provided. "Thank you for providing Annex Q of the Concession Agreement. We were expecting to study the [entire] concession agreement as well," he told them after. The department no longer responded.
 	</div>
 	<figure class="image is-fullwidth-centered">
-        <img src="https://pmagtulis.github.io/charts/co-response.png" alt="An FOI requester responds to the transport department">
+        <img src="https://pmagtulis.github.io/assets/co-response.png" alt="An FOI requester responds to the transport department">
         <figcaption><em><small>Kenneth Co's response to the transport department after only the annex of his requested report was given him. The agency no longer replied.</em> Source: FOI portal</small></figcaption>
        </figure>
 	   <br>
@@ -1300,6 +1300,8 @@
 		  hide2018()
 		  hide2021()
 
+
+
 		  // undo step-1
 		  	d3.selectAll("[data-name^='2017-overall'] path").style('opacity', 1)
 		 	d3.selectAll("[data-name^='2018-overall'] path").style('opacity', 1)
@@ -1307,6 +1309,7 @@
 		 	d3.selectAll("[data-name^='2020-overall'] path").style('opacity', 1)
 		 	d3.selectAll("[data-name^='2021-overall'] path").style('opacity', 1)
 			showoverall()
+
 
 	
 		  // step-1
@@ -1407,7 +1410,7 @@
 		scroller
 			.setup({
 				step: "#scrolly .scrolly-overlay .step",
-				offset: 0.7,
+				offset: 0.5,
 				debug: false
 			})
 			.onStepEnter(function({ element, index, direction}) {
