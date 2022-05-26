@@ -17,6 +17,15 @@
         margin-top:12px;
       }
 
+      hr {
+        max-width: 60rem;
+	      margin: auto;
+        margin-top:16px;
+        margin-bottom:16px;
+        background-color: grey;
+        opacity: 0.5;
+      }
+
     </style>
   </head>
   <body>
@@ -43,9 +52,6 @@
                 <a class="navbar-item" href="https://pmagtulis.github.io/stories/">
                   Stories
                   </a>
-                <a class="navbar-item" href="https://pmagtulis.github.io/analysis/">
-                  Data analysis
-                  </a>
                 <a class="navbar-item" href="https://pmagtulis.github.io/visualization/">
                   Visualization
                   </a>
@@ -65,6 +71,14 @@
     <!-- main -->
     <div class="container">
       <section class="section">
+
+        <div class="columns">
+          <div class="column is-full">
+          <div class="has-text-centered"><strong>Published papers</strong>
+          </div>
+          </div>
+          </div>
+
       <div class="columns">
           <div class="column is-one-third">
               <h5 class="title is-5"><a href="https://archium.ateneo.edu/asmph-pubs/80/" target="_blank">Transparency in Humanitarian Aid in the Philippines</a></h5>
@@ -120,6 +134,58 @@
                 <p>April 2016</p>
                 <p>Public Policy, University of the Philippines</p>
             </div>
+        </div>
+        <hr>
+
+        <div class="columns">
+          <div class="column is-full">
+          <div class="has-text-centered"><strong>Data analysis</strong>
+          </div>
+          </div>
+          </div>
+
+          <div class="columns">
+          <div class="column is-one-third">
+            <h5 class="title is-5"><a href="https://github.com/pmagtulis/foi-analysis.git" target="_blank">Philippines' Freedom of Information</a></h5>
+              <p>Analysis of over 100,000 requests filed on the <a href="https://www.foi.gov.ph/">FOI website</a> since November 2016.</p>
+              <br>
+              <p>January 2022</p>
+              <p><span class="tag is-link is-normal is-light">python</span> <span class="tag is-link is-normal is-light">pandas</span> <span class="tag is-link is-normal is-light">selenium</span> <span class="tag is-link is-normal is-light">regex</span></p>
+          </div>
+              
+          <div class="column is-one-third">
+            <h5 class="title is-5"><a href="https://github.com/pmagtulis/covid-ph.git" target="_blank">Covid-19 database</a></h5>
+              <p>Processed and analyzed Covid-19 case trends and testing figures in the Philippines.</p>
+              <br>
+              <p>January 2022</p>
+              <p><span class="tag is-link is-normal is-light">python</span> <span class="tag is-link is-normal is-light">pandas</span></p>
+          </div>
+      
+          <div class="column is-one-third">
+            <h5 class="title is-5"><a href="https://github.com/pmagtulis/ph-sona.git" target="_blank">The president's State of the Nation Address</a></h5>
+              <p> A compilation of the Philippine leaders' SONAs since 1936 for textual analysis. </p>
+              <br>
+              <p>December 2021</p>
+              <p><span class="tag is-link is-normal is-light">python</span> <span class="tag is-link is-normal is-light">pandas</span> <span class="tag is-link is-normal is-light">regex</span></p>
+          </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-one-third">
+          <h5 class="title is-5"><a href="https://github.com/pmagtulis/foi-ph-scraper.git" target="_blank">FOI auto-scraper</a></h5>
+            <p>Supplement to the analysis, this scraper automatically gets updated data from the <a href="https://github.com/prinz-magtulis/foi-analysis.git" target="_blank">FOI website</a> every Sunday.</p>
+            <br>
+            <p>December 2021</p>
+            <p><span class="tag is-link is-normal is-light">python</span> <span class="tag is-link is-normal is-light">selenium</span></p>
+        </div>
+            
+        <div class="column is-one-third">
+          <h5 class="title is-5"><a href="https://github.com/pmagtulis/supremecourt-ph-scraper.git" target="_blank">Philippines' Supreme Court decisions scraper</a></h5>
+          <p>A scraper of the Supreme Court <a href="https://elibrary.judiciary.gov.ph/">e-library</a> that contains its decisions since 1996.</p>
+            <br>
+            <p>February 2022</p>
+            <p><span class="tag is-link is-normal is-light">python</span> <span class="tag is-link is-normal is-light">pandas</span> <span class="tag is-link is-normal is-light">bs4</span> <span class="tag is-link is-normal is-light">regex</span></p>
+        </div>
         </div>
       </section>
     </div>
