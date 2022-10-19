@@ -1,774 +1,857 @@
 <html lang="en">
-    <head>
-        <script src="https://kit.fontawesome.com/092b142fb0.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta charset="utf-8" />
-        <meta property="og:title" content="Bangko Sentral set to hike rates for the first time since 2018">
-        <meta property="og:description" content="Inflation wave spreading across the globe prompts central bank action in the Philippines">
-        <meta property="og:type" content="article">
-        <meta property="og:image" content="https://pmagtulis.github.io/charts/bsp.jpeg">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:creator" content="@prinzmagtulis">
-    
-        <title>Bangko Sentral set to hike rates for the first time in 2018 | Prinz Magtulis</title>
-        <style>
-      #scrolly {
-        position: relative;
-        padding: 1rem;
-      }
 
-      .scrolly-overlay {
-        position: relative;
-        padding: 0;
-        min-width: 35rem;
-        margin: 0 auto;
-      }
+<head>
+	<script src="https://kit.fontawesome.com/092b142fb0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8" />
+	<meta property="og:title" content="Bangko Sentral set to hike rates for the first time since 2018">
+	<meta property="og:description"
+		content="Inflation wave spreading across the globe prompts central bank action in the Philippines">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://pmagtulis.github.io/charts/bsp.jpeg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@prinzmagtulis">
 
-      .sticky-thing {
-        position: -webkit-sticky;
-        position: sticky;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        z-index: 0;
-        top: 0;
-        height: 100vh;
-        /* Center everything inside */
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        justify-content: center;
-      }
+	<title>Bangko Sentral set to hike rates for the first time in 2018 | Prinz Magtulis</title>
+	<style>
+		#scrolly {
+			position: relative;
+			padding: 1rem;
+		}
 
-      .step {
-        margin: 0 auto 2rem auto;
-        margin-bottom: 25rem;
-        background-color: #fff;
-        color: black;
-		z-index:100;
-      }
+		.scrolly-overlay {
+			position: relative;
+			padding: 0;
+			min-width: 35rem;
+			margin: 0 auto;
+		}
 
-      .step p {
-        text-align: left;
-        padding: 1rem;
-        font-size: 1rem;
-      }
-
-      .hidden { visibility: hidden; }
-
-	  /* When it's less than 700 pixels wide, do normal scrollytelling */
-	  @media only screen and (min-width: 700px) {
-		#scrolly.side-by-side {
+		.sticky-thing {
+			position: -webkit-sticky;
+			position: sticky;
+			left: 0;
+			width: 100%;
+			margin: 0;
+			z-index: 0;
+			top: 0;
+			height: 100vh;
+			/* Center everything inside */
 			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			justify-content: center;
 		}
 
-		#scrolly.side-by-side > div {
-			flex-basis: 0;
-			flex-grow: 1;
-			flex-shrink: 1;
-			padding: 0.75em;
+		.step {
+			margin: 0 auto 2rem auto;
+			margin-bottom: 25rem;
+			background-color: #fff;
+			color: black;
+			z-index: 100;
 		}
 
-		#scrolly.side-by-side .scrolly-overlay {
-			margin-top: 70vh;
-			order: 0;
-			/* Change these to adjust sizing options */
-			min-width: 15rem;
-			max-width: 20rem;
+		.step p {
+			text-align: left;
+			padding: 1rem;
+			font-size: 1rem;
 		}
 
-		#scrolly.side-by-side .sticky-thing {
-			order: 1;
-			flex-grow: 2;
+		.hidden {
+			visibility: hidden;
 		}
-	  }
-    </style>
 
-<style>
-	.has-bg-img { 
-		background: url("https://pmagtulis.github.io/charts/bsp.jpeg"); 
-		background-size:cover; 
-	}
+		/* When it's less than 700 pixels wide, do normal scrollytelling */
+		@media only screen and (min-width: 700px) {
+			#scrolly.side-by-side {
+				display: flex;
+			}
 
-	.share-btn-container a i {
-		  font-size: 24px;
-          margin: 8px 0;
-		  transition: 500ms;
-          padding: 8px;
-	  }
+			#scrolly.side-by-side>div {
+				flex-basis: 0;
+				flex-grow: 1;
+				flex-shrink: 1;
+				padding: 0.75em;
+			}
 
-	  .share-btn-container i:hover {
-		color: #485fc7;
-      }
+			#scrolly.side-by-side .scrolly-overlay {
+				margin-top: 70vh;
+				order: 0;
+				/* Change these to adjust sizing options */
+				min-width: 15rem;
+				max-width: 20rem;
+			}
 
-      .share-btn-container .fa-facebook {
-          color: #fff
-      }
+			#scrolly.side-by-side .sticky-thing {
+				order: 1;
+				flex-grow: 2;
+			}
+		}
+	</style>
 
-      .share-btn-container .fa-twitter {
-          color: #fff
-      }
+	<style>
+		.has-bg-img {
+			background: url("https://pmagtulis.github.io/charts/bsp.jpeg");
+			background-size: cover;
+		}
 
-      .share-btn-container .fa-linkedin {
-          color: #fff
-      }
+		.share-btn-container a i {
+			font-size: 24px;
+			margin: 8px 0;
+			transition: 500ms;
+			padding: 8px;
+		}
 
-      .share-btn-container .fa-whatsapp {
-          color: #fff
-      }
-</style>
+		.share-btn-container i:hover {
+			color: #485fc7;
+		}
+
+		.share-btn-container .fa-facebook {
+			color: #fff
+		}
+
+		.share-btn-container .fa-twitter {
+			color: #fff
+		}
+
+		.share-btn-container .fa-linkedin {
+			color: #fff
+		}
+
+		.share-btn-container .fa-whatsapp {
+			color: #fff
+		}
+	</style>
 
 	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
-	
-  </head>
 
-  <body>
+</head>
+
+<body>
 
 	<!-- nav bar -->
 	<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-		<div class="navbar-start">
-			<div class="navbar-item">
-			  <div class="share-btn-container">
-				<a href="#" class="facebook-btn">
-				  <i class="fab fa-facebook"></i>
-				</a>
-				<a href="#" class="twitter-btn">
-				  <i class="fab fa-twitter"></i>
-				</a>
-				<a href="#" class="linkedin-btn">
-				  <i class="fab fa-linkedin"></i>
-				</a>
-				<a href="#" class="whatsapp-btn">
-				  <i class="fab fa-whatsapp"></i>
-				</a>
+			<div class="navbar-start">
+				<div class="navbar-item">
+					<div class="share-btn-container">
+						<a href="#" class="facebook-btn">
+							<i class="fab fa-facebook"></i>
+						</a>
+						<a href="#" class="twitter-btn">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#" class="linkedin-btn">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="#" class="whatsapp-btn">
+							<i class="fab fa-whatsapp"></i>
+						</a>
+					</div>
 				</div>
-				</div>
-				</div>
-
-				<a class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				  </a>
-				  </div>
-
-					<div class="navbar-menu" id="nav-links">
-						<div class="navbar-end">
-						  <a class="navbar-item" href="https://pmagtulis.github.io/projects/">
-							Back to projects page
-						  </a>
-			  <a class="navbar-item" href="https://pmagtulis.github.io/">
-				Back to homepage
-			  </a>
-			  </div>
 			</div>
-			  </nav>
+
+			<a class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+
+		<div class="navbar-menu" id="nav-links">
+			<div class="navbar-end">
+				<a class="navbar-item" href="https://pmagtulis.github.io/projects/">
+					Back to projects page
+				</a>
+				<a class="navbar-item" href="https://pmagtulis.github.io/">
+					Back to homepage
+				</a>
+			</div>
+		</div>
+	</nav>
 
 
-		<!-- title -->
-    <section class="hero is-large has-bg-img"> 
-		<div class="hero-body"> <div class="container">
-			<div class="block">
-			<h1 class="title has-text-bold">Bangko Sentral set to hike rates for the first time since 2018</h1> 
-			<h2 class="subtitle"><em>Inflation wave spreading across the globe prompts central bank action in the Philippines</em></h2>
-			<br>
-			<p><em>May 19, 2022</em></p>
-		</div> </div> 
+	<!-- title -->
+	<section class="hero is-large has-bg-img">
+		<div class="hero-body">
+			<div class="container">
+				<div class="block">
+					<h1 class="title has-text-bold">Bangko Sentral set to hike rates for the first time since 2018</h1>
+					<h2 class="subtitle"><em>Inflation wave spreading across the globe prompts central bank action in
+							the Philippines</em></h2>
+					<br>
+					<p><em>May 19, 2022</em></p>
+				</div>
+			</div>
 		</div>
 	</section>
-    <br>
+	<br>
 
 	<!-- main -->
-    <div class="container column is-half-desktop is-full-mobile is-full-tablet">
+	<div class="container column is-half-desktop is-full-mobile is-full-tablet">
 		<div class="block">
-            After four years, the Bangko Sentral ng Pilipinas, the Philippine central bank, appears poised to increase policy rates when it meets on Thursday, May 19.
-		</div>
-		<div class="block">
-			Currently, the overnight borrowing rate stands at 2%, a record-low set at the height of the pandemic in 2020 to ensure there is adequate liquidity in the financial system to support the economy 
-            while lockdowns prevented businesses to operate, and consumers to go out and spend.
+			After four years, the Bangko Sentral ng Pilipinas, the Philippine central bank, appears poised to increase
+			policy rates when it meets on Thursday, May 19.
 		</div>
 		<div class="block">
-			While the pandemic is still within our midst, the economy has already recovered, and gross domestic product is back at its pre-pandemic levels. Consequently, the challenge for the central bank has shifted back to its old nemesis: soaring inflation.
+			Currently, the overnight borrowing rate stands at 2%, a record-low set at the height of the pandemic in 2020
+			to ensure there is adequate liquidity in the financial system to support the economy
+			while lockdowns prevented businesses to operate, and consumers to go out and spend.
 		</div>
 		<div class="block">
-			Consumer prices, as measured by the consumer price index, breached past the 2-4% annual target anew in April to hit 4.9%. The four-month inflation stood at 4.1%, 
-            no thanks to supply constraints from food to oil that continued to push prices up while consumer demand is still on the rise from pandemic slowdown.
+			While the pandemic is still within our midst, the economy has already recovered, and gross domestic product
+			is back at its pre-pandemic levels. Consequently, the challenge for the central bank has shifted back to its
+			old nemesis: soaring inflation.
 		</div>
-        </div>
-	<div class="container column is-full-desktop is-full-mobile is-full-tablet">
-        <section id="scrolly" class="side-by-side">
-            <div class="sticky-thing">
-              <div class="ai2html-container">
-
-                
-
-<!-- Generated by ai2html v0.106.0 - 2022-05-19 01:07 -->
-<!-- ai file: inflation.ai -->
-<style media="screen,print">
-	#g-inflation-box ,
-	#g-inflation-box .g-artboard {
-		margin:0 auto;
-	}
-	#g-inflation-box p {
-		margin:0;
-	}
-	#g-inflation-box .g-aiAbs {
-		position:absolute;
-	}
-	#g-inflation-box .g-aiImg {
-		position:absolute;
-		top:0;
-		display:block;
-		width:100% !important;
-	}
-	#g-inflation-box .g-aiSymbol {
-		position: absolute;
-		box-sizing: border-box;
-	}
-	#g-inflation-box .g-aiPointText p { white-space: nowrap; }
-	#g-inflation-desktop {
-		position:relative;
-		overflow:hidden;
-	}
-	#g-inflation-desktop p {
-		font-family:roboto,regular,sans-serif;
-		line-height:17px;
-		height:auto;
-		opacity:1;
-		letter-spacing:0em;
-		font-size:14px;
-		text-align:left;
-		color:rgb(70,70,70);
-		text-transform:none;
-		padding-bottom:0;
-		padding-top:0;
-		mix-blend-mode:normal;
-		font-style:normal;
-		position:static;
-	}
-	#g-inflation-desktop .g-pstyle0 {
-		font-family:roboto,bold,sans-serif;
-		font-weight:bold;
-		height:17px;
-		text-align:center;
-	}
-	#g-inflation-desktop .g-pstyle1 {
-		height:17px;
-		text-align:right;
-	}
-
-</style>
-
-<div id="g-inflation-box" class="ai2html">
-
-	<!-- Artboard: desktop -->
-	<div id="g-inflation-desktop" class="g-artboard" style="max-width: 800px;max-height: 578px" data-aspect-ratio="1.383" data-min-width="0">
-<div style="padding: 0 0 72.2895% 0;"></div>
-		<img id="g-inflation-desktop-img" class="g-aiImg" alt="" src="inflation-desktop.png"/>
-<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg class="g-aiImg" version="1.2" baseProfile="tiny" id="g-inflation-desktop-interactive-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" viewBox="0 0 800 578.316" overflow="visible" xml:space="preserve">
-<g>
-	
-		<path id="rate-5" data-name="rate-5" fill="none" stroke="#1F77B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M523.898,410.607h13.212h13.633h13.633h12.314h13.615h13.193h13.633h13.193h13.633h13.633h13.193h13.633h13.212h13.633h13.633
-		h12.314h13.615"/>
-	
-		<path id="rate-4" data-name="rate-4" fill="none" stroke="#1F77B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M416.171,337.528l13.615,29.232h13.193l13.633,29.232h13.193h13.633h13.633h13.193l13.633,14.616"/>
-	
-		<path id="rate-3" data-name="rate-3" fill="none" stroke="#1F77B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M336.113,293.68h13.193h13.633h13.212h13.633l13.633,14.616l12.754,29.232"/>
-	
-		<path id="rate-2" data-name="rate-2" fill="none" stroke="#1F77B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M135.135,322.912h13.193l13.633-29.232l13.633-29.232h13.193l13.633-14.616h13.212h13.633h13.633h12.314h13.615l13.193,14.616
-		h13.633h13.193l13.633,14.616l13.633,14.616"/>
-	
-		<path id="rate-1" data-name="rate-1" fill="none" stroke="#1F77B4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M68.747,352.144H82.38h12.314h13.615l13.193-14.616l13.633-14.616"/>
-	
-		<path id="inflation-6" data-name="inflation-6" fill="none" stroke="#D62728" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M724.895,352.144l12.314-58.463l13.615-52.617"/>
-	
-		<path id="inflation-5" data-name="inflation-5" fill="none" stroke="#D62728" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M564.376,281.988l12.314,5.846h13.615h13.193l13.633,23.385h13.193l13.633-40.924l13.633,11.693l13.193,11.693l13.633,17.539
-		l13.212,35.078l13.633,5.846h13.633"/>
-	
-		<path id="inflation-4" data-name="inflation-4" fill="none" stroke="#D62728" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M442.979,433.992l13.633-40.924l13.193-5.846l13.633,11.693h13.633l13.193-5.846l13.633-40.924l13.212-17.539l13.633-23.385
-		l13.633-29.232"/>
-	
-		<path id="inflation-3" data-name="inflation-3" fill="none" stroke="#D62728" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M336.113,498.301l13.193-5.846l13.633-35.078l13.212-70.156l13.633-35.078l13.633,29.232l12.754,17.539l13.615,23.385
-		l13.193,11.693"/>
-	
-		<path id="inflation-2" data-name="inflation-2" fill="none" stroke="#D62728" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M175.595,124.138h13.193l13.633,46.77l13.212,58.463l13.633,40.924l13.633,35.078l12.314,23.385l13.615,11.693h13.193
-		l13.633,29.232l13.193,29.232l13.633,46.77l13.633,52.617"/>
-	
-		<path id="inflation-1" data-name="inflation-1" fill="none" stroke="#D62728" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
-		M68.747,328.758l13.633-17.539l12.314-35.078h13.615l13.193-17.539l13.633-23.385l13.193-46.77l13.633-46.77l13.633-17.539"/>
-	<g id="arrow-1" data-name="arrow-1">
-		<path fill="none" stroke="#464646" d="M170.377,95.548c-2.526,11.26-0.376,20.733,5.636,25.201"/>
-		<g>
-			<polygon fill="#464646" points="170.91,121.657 170.86,120.658 175.784,120.415 175.182,115.52 176.176,115.399 176.908,121.36 
-							"/>
-		</g>
-	</g>
-	<g id="arrow-4" data-name="arrow-4">
-		<path fill="none" stroke="#464646" d="M442.105,439.609c-8.476,5.324-8.577,16.377-0.161,29.3"/>
-		<g>
-			<polygon fill="#464646" points="437.091,438.248 436.954,439.239 441.84,439.906 440.817,444.731 441.797,444.937 
-				443.041,439.062 			"/>
-		</g>
-	</g>
-	<g id="arrow-5" data-name="arrow-5">
-		<path fill="none" stroke="#464646" d="M718.687,200.82c-7.806,15.823,2.564,30.779,27.217,39.389"/>
-		<g>
-			<polygon fill="#464646" points="741.397,242.891 741.008,241.969 745.553,240.058 743.315,235.664 744.207,235.21 
-				746.932,240.562 			"/>
-		</g>
-	</g>
-	<g id="arrow-2" data-name="arrow-2">
-		<path fill="none" stroke="#464646" d="M136.426,329.569c-4.321,12.824-2.541,23.385,4.756,27.85"/>
-		<g>
-			<polygon fill="#464646" points="131.586,331.552 132.087,332.419 136.353,329.946 138.508,334.381 139.408,333.943 
-				136.782,328.541 			"/>
-		</g>
-	</g>
-	<g id="arrow-3" data-name="arrow-3">
-		<path fill="none" stroke="#464646" d="M418.383,334.155c29.055-4.14,44.027-21.054,39.322-44.555"/>
-		<g>
-			<polygon fill="#464646" points="422.304,337.633 422.86,336.801 418.757,334.067 421.783,330.174 420.993,329.56 
-				417.307,334.302 			"/>
-		</g>
-	</g>
-</g>
-<style>
-#g-inflation-desktop-interactive-img rect, #g-inflation-desktop-interactive-img circle, #g-inflation-desktop-interactive-img path, #g-inflation-desktop-interactive-img line, #g-inflation-desktop-interactive-img polyline, #g-inflation-desktop-interactive-img polygon { vector-effect: non-scaling-stroke; }
-</style>
-</svg>
-
-		<div id="low-base" class="g-low-base g-aiAbs g-aiPointText" style="top:6.8795%;margin-top:-17.8px;left:36.064%;margin-left:-66.5px;width:133px;">
-			<p class="g-pstyle0">Low base effects </p>
-			<p class="g-pstyle0">take hold</p>
-		</div>
-		<div id="reopening" class="g-reopening g-aiAbs g-aiPointText" style="top:6.2916%;margin-top:-9.4px;left:74.1489%;margin-left:-89px;width:178px;">
-			<p class="g-pstyle0">Economy slowly reopens</p>
-		</div>
-		<div id="rice-inflation" class="g-rice-inflation g-aiAbs g-aiPointText" style="top:11.9632%;margin-top:-26.2px;right:78.2637%;width:114px;">
-			<p class="g-pstyle1">Inflation peaks</p>
-			<p class="g-pstyle1">as rice supply</p>
-			<p class="g-pstyle1">tightens</p>
-		</div>
-		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:10.4416%;margin-top:-9.4px;right:95.6664%;width:40px;">
-			<p class="g-pstyle1">8%</p>
-		</div>
-		<div id="ukraine" class="g-ukraine g-aiAbs g-aiPointText" style="top:30.5689%;margin-top:-17.8px;right:2.4802%;width:124px;">
-			<p class="g-pstyle1">Ukraine invaded;</p>
-			<p class="g-pstyle1">oil prices surge</p>
-		</div>
-		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:30.6727%;margin-top:-9.4px;right:95.6346%;width:30px;">
-			<p class="g-pstyle1">6</p>
-		</div>
-		<div id="pandemic-slash" class="g-pandemic-slash g-aiAbs g-aiPointText" style="top:45.8547%;margin-top:-26.2px;right:41.9069%;width:109px;">
-			<p class="g-pstyle1">Rates slashed</p>
-			<p class="g-pstyle1">to respond</p>
-			<p class="g-pstyle1">to pandemic</p>
-		</div>
-		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:50.9039%;margin-top:-9.4px;right:95.6346%;width:30px;">
-			<p class="g-pstyle1">4</p>
-		</div>
-		<div id="begin-hike" class="g-begin-hike g-aiAbs g-aiPointText" style="top:66.6046%;margin-top:-26.2px;right:74.9226%;width:139px;">
-			<p class="g-pstyle1">BSP begins</p>
-			<p class="g-pstyle1">raising rates</p>
-			<p class="g-pstyle1">as rice prices jump</p>
-		</div>
-		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:71.135%;margin-top:-9.4px;right:95.6346%;width:30px;">
-			<p class="g-pstyle1">2</p>
-		</div>
-		<div id="shutdowns" class="g-shutdowns g-aiAbs g-aiPointText" style="top:85.9711%;margin-top:-26.2px;right:42.3467%;width:109px;">
-			<p class="g-pstyle1">Inflation</p>
-			<p class="g-pstyle1">tamed</p>
-			<p class="g-pstyle1">by shutdowns</p>
-		</div>
-		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.3661%;margin-top:-9.4px;right:95.5552%;width:30px;">
-			<p class="g-pstyle1">0</p>
-		</div>
-		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.1703%;margin-top:-9.4px;right:69.4301%;width:53px;">
-			<p class="g-pstyle1">2019</p>
-		</div>
-		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.1702%;margin-top:-9.4px;right:49.4613%;width:53px;">
-			<p class="g-pstyle1">2020</p>
-		</div>
-		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.1704%;margin-top:-9.4px;right:89.3029%;width:53px;">
-			<p class="g-pstyle1">2018</p>
-		</div>
-		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.1703%;margin-top:-9.4px;right:29.2827%;width:53px;">
-			<p class="g-pstyle1">2021</p>
-		</div>
-		<div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.1703%;margin-top:-9.4px;right:9.2727%;width:53px;">
-			<p class="g-pstyle1">2022</p>
+		<div class="block">
+			Consumer prices, as measured by the consumer price index, breached past the 2-4% annual target anew in April
+			to hit 4.9%. The four-month inflation stood at 4.1%,
+			no thanks to supply constraints from food to oil that continued to push prices up while consumer demand is
+			still on the rise from pandemic slowdown.
 		</div>
 	</div>
-
-</div>
-
-<!-- End ai2html - 2022-05-19 01:07 -->
-
-</div>
-</div>
-
-<div class="scrolly-overlay">
-	<div class="step" id="step-zero">
-		<p>This was how inflation and BSP's benchmark rates tread over the past four years.</p>
-	  </div>
-    <div class="step" id="step-one">
-      <p>In 2018, <span style="background: #d62728"><span class="has-text-white has-text-weight-bold">inflation</span></span>peaked at 6.9% in October after a shortage in rice supplies pushed prices up.</p>
-    </div>
-    <div class="step" id="step-two">
-      <p>The central bank acted quickly, that even before things got worse, it raised it started hiking its <span style="background: #0397cc"><span class="has-text-white has-text-weight-bold">benchmark rate</span></span>.</p>
-    </div>
-    <div class="step" id="step-three">
-      <p>By the following year, year-over-year inflation steadily stabilized, partly because of high prices the previous year.</p>
-    </div>
-    <div class="step" id="step-four">
-      <p>After a series of hikes, BSP started bringing down the borrowing rates in Q2 also in support of slowing economic growth that <strong>slumped to 5.4%, the slowest since Q1 2015</strong>.</p>
-    </div>
-    <div class="step" id="step-five">
-      <p>And then the pandemic happened. At the time, BSP started cutting rates as early as February 2020.</p>
-    </div>
-    <div class="step" id="step-six">
-      <p>From 4% at the start of the year, rates <strong>dropped to 2% by November 2020</strong>.</p>
-    </div>
-    <div class="step" id="step-seven">
-        <p>Inflation was not a problem at the time because demand was subdued due to lockdowns.</p>
-      </div>
-      <div class="step" id="step-eight">
-        <p>That has been the case until the economy started to reopen and eased restrictions. Inflation briefly breached the 4% upper-end target of the central bank.</p>
-      </div>
-      <div class="step" id="step-nine">
-        <p>BSP downplayed the target breach, saying it was <strong>"transitory"</strong>because the economy was gaining ground from years of lockdown.</p>
-      </div>
-      <div class="step" id="step-ten">
-        <p>Indeed, inflation went back to 3.7% by June 2021 and dropped further to 3% by January 2022.</p>
-      </div>
-      <div class="step" id="step-eleven">
-        <p>But Ukraine was invaded in February, and with it came an oil price surge that saw inflation shot back up to 4.9% in April.</p>
-      </div>
-	  <div class="step" id="step-twelve">
-        <p>The central bank, before May 19, did not act to respond to rising commodity costs and kept rates at record-lows.</p>
-      </div>
-      <div class="step" id="step-thirteen">
-        <p>That meant inflation was hovering more than double the <span style="background: #0397cc"><span class="has-text-white has-text-weight-bold">benchmark rate</span></span>. Put simply, <span style="background: #d62728"><span class="has-text-white has-text-weight-bold">inflation</span></span> is eating up the interest charged on money.</p>
-      </div>
-  </div>
-</div>
-</section>
-
-<script>
-
-function showred() {
-        // annotation: #show inflation line and annotations
-		d3.selectAll("[data-name='inflation-1']").classed('hidden', false)
-		d3.selectAll("[data-name='inflation-2']").classed('hidden', false)
-		d3.selectAll("[data-name='inflation-3']").classed('hidden', false)
-		d3.selectAll("[data-name='inflation-4']").classed('hidden', false)
-		d3.selectAll("[data-name='inflation-5']").classed('hidden', false)
-        d3.selectAll("[data-name='inflation-6']").classed('hidden', false)
-        d3.selectAll("[data-name='arrow-1']").classed('hidden', false)
-        d3.selectAll("[data-name='arrow-4']").classed('hidden', false)
-        d3.selectAll("[data-name='arrow-5']").classed('hidden', false)
-		d3.selectAll(".g-ukraine").classed('hidden', false)
-		d3.selectAll(".g-shutdowns").classed('hidden', false)
-		d3.selectAll(".g-rice-inflation").classed('hidden', false)
-    
-}
-
-function hidered() {
-        // annotation: #hide inflation line and annotations
-		d3.selectAll("[data-name='inflation-1']").classed('hidden', true)
-		d3.selectAll("[data-name='inflation-2']").classed('hidden', true)
-		d3.selectAll("[data-name='inflation-3']").classed('hidden', true)
-		d3.selectAll("[data-name='inflation-4']").classed('hidden', true)
-		d3.selectAll("[data-name='inflation-5']").classed('hidden', true)
-        d3.selectAll("[data-name='inflation-6']").classed('hidden', true)
-        d3.selectAll("[data-name='arrow-1']").classed('hidden', true)
-        d3.selectAll("[data-name='arrow-4']").classed('hidden', true)
-        d3.selectAll("[data-name='arrow-5']").classed('hidden', true)
-		d3.selectAll(".g-ukraine").classed('hidden', true)
-		d3.selectAll(".g-shutdowns").classed('hidden', true)
-		d3.selectAll(".g-rice-inflation").classed('hidden', true)
-    
-}
-
-function showblue() {
-        // annotation: #show rates and annotations
-		d3.selectAll("[data-name='rate-1']").classed('hidden', false)
-		d3.selectAll("[data-name='rate-2']").classed('hidden', false)
-		d3.selectAll("[data-name='rate-3']").classed('hidden', false)
-		d3.selectAll("[data-name='rate-4']").classed('hidden', false)
-		d3.selectAll("[data-name='rate-5']").classed('hidden', false)
-        d3.selectAll("[data-name='arrow-2']").classed('hidden', false)
-        d3.selectAll("[data-name='arrow-3']").classed('hidden', false)
-		d3.selectAll(".g-begin-hike").classed('hidden', false)
-		d3.selectAll(".g-pandemic-slash").classed('hidden', false)
-    
-}
-
-function hideblue() {
-        // annotation: #hide rates and annotations
-		d3.selectAll("[data-name='rate-1']").classed('hidden', true)
-		d3.selectAll("[data-name='rate-2']").classed('hidden', true)
-		d3.selectAll("[data-name='rate-3']").classed('hidden', true)
-		d3.selectAll("[data-name='rate-4']").classed('hidden', true)
-		d3.selectAll("[data-name='rate-5']").classed('hidden', true)
-        d3.selectAll("[data-name='arrow-2']").classed('hidden', true)
-        d3.selectAll("[data-name='arrow-3']").classed('hidden', true)
-		d3.selectAll(".g-begin-hike").classed('hidden', true)
-		d3.selectAll(".g-pandemic-slash").classed('hidden', true)
-    
-}
-
-function showlowbase() {
-        // show low base annotation
-		d3.selectAll(".g-low-base").classed('hidden', false)
-    
-}
-
-function hidelowbase() {
-        // show low base annotation
-		d3.selectAll(".g-low-base").classed('hidden', true)
-    
-}
-
-function showreopening() {
-        // show low base annotation
-		d3.selectAll(".g-reopening").classed('hidden', false)
-    
-}
-
-function hidereopening() {
-        // show low base annotation
-		d3.selectAll(".g-reopening").classed('hidden', true)
-    
-}
-
-     /* Scrollytelling code goes under here */
-
-	 d3.select("#step-zero").on('stepout', function(e) {
-        if(e.detail.direction === 'up') {
-          // undo the changes from step zero
-		showblue()
-		showred()
-		showlowbase()
-		showreopening()
-        }
-      }) 
-	 
-	 d3.select("#step-zero").on('stepin', function(e) {
-        console.log("Got to step zero")
-
-        // do changes for step zero
-        hideblue() 
-        hidered()
-        hidelowbase()
-        hidereopening()
-
-	  })
-	 
-	  d3.select("#step-one").on('stepout', function(e) {
-        if(e.detail.direction === 'up') {
-          // undo the changes from step one
-		d3.selectAll("[data-name='inflation-1']").classed('hidden', true)
-		d3.selectAll("[data-name='arrow-1']").classed('hidden', true)
-		d3.selectAll(".g-rice-inflation").classed('hidden', true)
-        }
-      })
-
-      d3.select("#step-one").on('stepin', function(e) {
-        console.log("Got to step one")
-
-        // do changes for step one
-		d3.selectAll("[data-name='inflation-1']").classed('hidden', false)
-		d3.selectAll("[data-name='arrow-1']").classed('hidden', false)
-		d3.selectAll(".g-rice-inflation").classed('hidden', false)
+	<div class="container column is-full-desktop is-full-mobile is-full-tablet">
+		<section id="scrolly" class="side-by-side">
+			<div class="sticky-thing">
+				<div class="ai2html-container">
 
 
 
-		 // undo changes from step two
-		d3.selectAll("[data-name='rate-1']").classed('hidden', true)
-		d3.selectAll("[data-name='arrow-2']").classed('hidden', true)
-		d3.selectAll(".g-begin-hike").classed('hidden', true)
-      })
+					<!-- Generated by ai2html v0.106.0 - 2022-05-19 01:07 -->
+					<!-- ai file: inflation.ai -->
+					<style media="screen,print">
+						#g-inflation-box,
+						#g-inflation-box .g-artboard {
+							margin: 0 auto;
+						}
 
-      d3.select("#step-two").on('stepin', function(e) {   
+						#g-inflation-box p {
+							margin: 0;
+						}
 
-        // do changes for step two
-        console.log("Got to step two")
-        d3.selectAll("[data-name='rate-1']").classed('hidden', false)
-		d3.selectAll("[data-name='arrow-2']").classed('hidden', false)
-		d3.selectAll(".g-begin-hike").classed('hidden', false)
+						#g-inflation-box .g-aiAbs {
+							position: absolute;
+						}
 
-		   // undo changes from step three
-		d3.selectAll("[data-name='inflation-2']").classed('hidden', true)
-		hidelowbase()
-      })
+						#g-inflation-box .g-aiImg {
+							position: absolute;
+							top: 0;
+							display: block;
+							width: 100% !important;
+						}
 
-      d3.select("#step-three").on('stepin', function(e) {
-        
-		// do changes for step three
-		d3.selectAll("[data-name='inflation-2']").classed('hidden', false)
-		showlowbase()
+						#g-inflation-box .g-aiSymbol {
+							position: absolute;
+							box-sizing: border-box;
+						}
 
-		 // undo changes from step four
-		 d3.selectAll("[data-name='rate-2']").classed('hidden', true)
-      })
+						#g-inflation-box .g-aiPointText p {
+							white-space: nowrap;
+						}
 
-	  d3.select("#step-four").on('stepin', function(e) {
-        
-		// do changes for step four
-		d3.selectAll("[data-name='rate-2']").classed('hidden', false)
+						#g-inflation-desktop {
+							position: relative;
+							overflow: hidden;
+						}
+
+						#g-inflation-desktop p {
+							font-family: roboto, regular, sans-serif;
+							line-height: 17px;
+							height: auto;
+							opacity: 1;
+							letter-spacing: 0em;
+							font-size: 14px;
+							text-align: left;
+							color: rgb(70, 70, 70);
+							text-transform: none;
+							padding-bottom: 0;
+							padding-top: 0;
+							mix-blend-mode: normal;
+							font-style: normal;
+							position: static;
+						}
+
+						#g-inflation-desktop .g-pstyle0 {
+							font-family: roboto, bold, sans-serif;
+							font-weight: bold;
+							height: 17px;
+							text-align: center;
+						}
+
+						#g-inflation-desktop .g-pstyle1 {
+							height: 17px;
+							text-align: right;
+						}
+					</style>
+
+					<div id="g-inflation-box" class="ai2html">
+
+						<!-- Artboard: desktop -->
+						<div id="g-inflation-desktop" class="g-artboard" style="max-width: 800px;max-height: 578px"
+							data-aspect-ratio="1.383" data-min-width="0">
+							<div style="padding: 0 0 72.2895% 0;"></div>
+							<img id="g-inflation-desktop-img" class="g-aiImg" alt="" src="inflation-desktop.png" />
+							<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<svg class="g-aiImg" version="1.2" baseProfile="tiny"
+								id="g-inflation-desktop-interactive-img" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 578.316"
+								overflow="visible" xml:space="preserve">
+								<g>
+
+									<path id="rate-5" data-name="rate-5" fill="none" stroke="#1F77B4" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" d="
+		M523.898,410.607h13.212h13.633h13.633h12.314h13.615h13.193h13.633h13.193h13.633h13.633h13.193h13.633h13.212h13.633h13.633
+		h12.314h13.615" />
+
+									<path id="rate-4" data-name="rate-4" fill="none" stroke="#1F77B4" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" d="
+		M416.171,337.528l13.615,29.232h13.193l13.633,29.232h13.193h13.633h13.633h13.193l13.633,14.616" />
+
+									<path id="rate-3" data-name="rate-3" fill="none" stroke="#1F77B4" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" d="
+		M336.113,293.68h13.193h13.633h13.212h13.633l13.633,14.616l12.754,29.232" />
+
+									<path id="rate-2" data-name="rate-2" fill="none" stroke="#1F77B4" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" d="
+		M135.135,322.912h13.193l13.633-29.232l13.633-29.232h13.193l13.633-14.616h13.212h13.633h13.633h12.314h13.615l13.193,14.616
+		h13.633h13.193l13.633,14.616l13.633,14.616" />
+
+									<path id="rate-1" data-name="rate-1" fill="none" stroke="#1F77B4" stroke-width="3"
+										stroke-linecap="round" stroke-linejoin="round" d="
+		M68.747,352.144H82.38h12.314h13.615l13.193-14.616l13.633-14.616" />
+
+									<path id="inflation-6" data-name="inflation-6" fill="none" stroke="#D62728"
+										stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
+		M724.895,352.144l12.314-58.463l13.615-52.617" />
+
+									<path id="inflation-5" data-name="inflation-5" fill="none" stroke="#D62728"
+										stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
+		M564.376,281.988l12.314,5.846h13.615h13.193l13.633,23.385h13.193l13.633-40.924l13.633,11.693l13.193,11.693l13.633,17.539
+		l13.212,35.078l13.633,5.846h13.633" />
+
+									<path id="inflation-4" data-name="inflation-4" fill="none" stroke="#D62728"
+										stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
+		M442.979,433.992l13.633-40.924l13.193-5.846l13.633,11.693h13.633l13.193-5.846l13.633-40.924l13.212-17.539l13.633-23.385
+		l13.633-29.232" />
+
+									<path id="inflation-3" data-name="inflation-3" fill="none" stroke="#D62728"
+										stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
+		M336.113,498.301l13.193-5.846l13.633-35.078l13.212-70.156l13.633-35.078l13.633,29.232l12.754,17.539l13.615,23.385
+		l13.193,11.693" />
+
+									<path id="inflation-2" data-name="inflation-2" fill="none" stroke="#D62728"
+										stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
+		M175.595,124.138h13.193l13.633,46.77l13.212,58.463l13.633,40.924l13.633,35.078l12.314,23.385l13.615,11.693h13.193
+		l13.633,29.232l13.193,29.232l13.633,46.77l13.633,52.617" />
+
+									<path id="inflation-1" data-name="inflation-1" fill="none" stroke="#D62728"
+										stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+										d="
+		M68.747,328.758l13.633-17.539l12.314-35.078h13.615l13.193-17.539l13.633-23.385l13.193-46.77l13.633-46.77l13.633-17.539" />
+									<g id="arrow-1" data-name="arrow-1">
+										<path fill="none" stroke="#464646"
+											d="M170.377,95.548c-2.526,11.26-0.376,20.733,5.636,25.201" />
+										<g>
+											<polygon fill="#464646" points="170.91,121.657 170.86,120.658 175.784,120.415 175.182,115.52 176.176,115.399 176.908,121.36 
+							" />
+										</g>
+									</g>
+									<g id="arrow-4" data-name="arrow-4">
+										<path fill="none" stroke="#464646"
+											d="M442.105,439.609c-8.476,5.324-8.577,16.377-0.161,29.3" />
+										<g>
+											<polygon fill="#464646" points="437.091,438.248 436.954,439.239 441.84,439.906 440.817,444.731 441.797,444.937 
+				443.041,439.062 			" />
+										</g>
+									</g>
+									<g id="arrow-5" data-name="arrow-5">
+										<path fill="none" stroke="#464646"
+											d="M718.687,200.82c-7.806,15.823,2.564,30.779,27.217,39.389" />
+										<g>
+											<polygon fill="#464646" points="741.397,242.891 741.008,241.969 745.553,240.058 743.315,235.664 744.207,235.21 
+				746.932,240.562 			" />
+										</g>
+									</g>
+									<g id="arrow-2" data-name="arrow-2">
+										<path fill="none" stroke="#464646"
+											d="M136.426,329.569c-4.321,12.824-2.541,23.385,4.756,27.85" />
+										<g>
+											<polygon fill="#464646" points="131.586,331.552 132.087,332.419 136.353,329.946 138.508,334.381 139.408,333.943 
+				136.782,328.541 			" />
+										</g>
+									</g>
+									<g id="arrow-3" data-name="arrow-3">
+										<path fill="none" stroke="#464646"
+											d="M418.383,334.155c29.055-4.14,44.027-21.054,39.322-44.555" />
+										<g>
+											<polygon fill="#464646" points="422.304,337.633 422.86,336.801 418.757,334.067 421.783,330.174 420.993,329.56 
+				417.307,334.302 			" />
+										</g>
+									</g>
+								</g>
+								<style>
+									#g-inflation-desktop-interactive-img rect,
+									#g-inflation-desktop-interactive-img circle,
+									#g-inflation-desktop-interactive-img path,
+									#g-inflation-desktop-interactive-img line,
+									#g-inflation-desktop-interactive-img polyline,
+									#g-inflation-desktop-interactive-img polygon {
+										vector-effect: non-scaling-stroke;
+									}
+								</style>
+							</svg>
+
+							<div id="low-base" class="g-low-base g-aiAbs g-aiPointText"
+								style="top:6.8795%;margin-top:-17.8px;left:36.064%;margin-left:-66.5px;width:133px;">
+								<p class="g-pstyle0">Low base effects </p>
+								<p class="g-pstyle0">take hold</p>
+							</div>
+							<div id="reopening" class="g-reopening g-aiAbs g-aiPointText"
+								style="top:6.2916%;margin-top:-9.4px;left:74.1489%;margin-left:-89px;width:178px;">
+								<p class="g-pstyle0">Economy slowly reopens</p>
+							</div>
+							<div id="rice-inflation" class="g-rice-inflation g-aiAbs g-aiPointText"
+								style="top:11.9632%;margin-top:-26.2px;right:78.2637%;width:114px;">
+								<p class="g-pstyle1">Inflation peaks</p>
+								<p class="g-pstyle1">as rice supply</p>
+								<p class="g-pstyle1">tightens</p>
+							</div>
+							<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:10.4416%;margin-top:-9.4px;right:95.6664%;width:40px;">
+								<p class="g-pstyle1">8%</p>
+							</div>
+							<div id="ukraine" class="g-ukraine g-aiAbs g-aiPointText"
+								style="top:30.5689%;margin-top:-17.8px;right:2.4802%;width:124px;">
+								<p class="g-pstyle1">Ukraine invaded;</p>
+								<p class="g-pstyle1">oil prices surge</p>
+							</div>
+							<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:30.6727%;margin-top:-9.4px;right:95.6346%;width:30px;">
+								<p class="g-pstyle1">6</p>
+							</div>
+							<div id="pandemic-slash" class="g-pandemic-slash g-aiAbs g-aiPointText"
+								style="top:45.8547%;margin-top:-26.2px;right:41.9069%;width:109px;">
+								<p class="g-pstyle1">Rates slashed</p>
+								<p class="g-pstyle1">to respond</p>
+								<p class="g-pstyle1">to pandemic</p>
+							</div>
+							<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:50.9039%;margin-top:-9.4px;right:95.6346%;width:30px;">
+								<p class="g-pstyle1">4</p>
+							</div>
+							<div id="begin-hike" class="g-begin-hike g-aiAbs g-aiPointText"
+								style="top:66.6046%;margin-top:-26.2px;right:74.9226%;width:139px;">
+								<p class="g-pstyle1">BSP begins</p>
+								<p class="g-pstyle1">raising rates</p>
+								<p class="g-pstyle1">as rice prices jump</p>
+							</div>
+							<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:71.135%;margin-top:-9.4px;right:95.6346%;width:30px;">
+								<p class="g-pstyle1">2</p>
+							</div>
+							<div id="shutdowns" class="g-shutdowns g-aiAbs g-aiPointText"
+								style="top:85.9711%;margin-top:-26.2px;right:42.3467%;width:109px;">
+								<p class="g-pstyle1">Inflation</p>
+								<p class="g-pstyle1">tamed</p>
+								<p class="g-pstyle1">by shutdowns</p>
+							</div>
+							<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:91.3661%;margin-top:-9.4px;right:95.5552%;width:30px;">
+								<p class="g-pstyle1">0</p>
+							</div>
+							<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:95.1703%;margin-top:-9.4px;right:69.4301%;width:53px;">
+								<p class="g-pstyle1">2019</p>
+							</div>
+							<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:95.1702%;margin-top:-9.4px;right:49.4613%;width:53px;">
+								<p class="g-pstyle1">2020</p>
+							</div>
+							<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:95.1704%;margin-top:-9.4px;right:89.3029%;width:53px;">
+								<p class="g-pstyle1">2018</p>
+							</div>
+							<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:95.1703%;margin-top:-9.4px;right:29.2827%;width:53px;">
+								<p class="g-pstyle1">2021</p>
+							</div>
+							<div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText"
+								style="top:95.1703%;margin-top:-9.4px;right:9.2727%;width:53px;">
+								<p class="g-pstyle1">2022</p>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- End ai2html - 2022-05-19 01:07 -->
+
+				</div>
+			</div>
+
+			<div class="scrolly-overlay">
+				<div class="step" id="step-zero">
+					<p>This was how inflation and BSP's benchmark rates tread over the past four years.</p>
+				</div>
+				<div class="step" id="step-one">
+					<p>In 2018, <span style="background: #d62728"><span
+								class="has-text-white has-text-weight-bold">inflation</span></span>peaked at 6.9% in
+						October after a shortage in rice supplies pushed prices up.</p>
+				</div>
+				<div class="step" id="step-two">
+					<p>The central bank acted quickly, that even before things got worse, it raised it started hiking
+						its <span style="background: #0397cc"><span
+								class="has-text-white has-text-weight-bold">benchmark rate</span></span>.</p>
+				</div>
+				<div class="step" id="step-three">
+					<p>By the following year, year-over-year inflation steadily stabilized, partly because of high
+						prices the previous year.</p>
+				</div>
+				<div class="step" id="step-four">
+					<p>After a series of hikes, BSP started bringing down the borrowing rates in Q2 also in support of
+						slowing economic growth that <strong>slumped to 5.4%, the slowest since Q1 2015</strong>.</p>
+				</div>
+				<div class="step" id="step-five">
+					<p>And then the pandemic happened. At the time, BSP started cutting rates as early as February 2020.
+					</p>
+				</div>
+				<div class="step" id="step-six">
+					<p>From 4% at the start of the year, rates <strong>dropped to 2% by November 2020</strong>.</p>
+				</div>
+				<div class="step" id="step-seven">
+					<p>Inflation was not a problem at the time because demand was subdued due to lockdowns.</p>
+				</div>
+				<div class="step" id="step-eight">
+					<p>That has been the case until the economy started to reopen and eased restrictions. Inflation
+						briefly breached the 4% upper-end target of the central bank.</p>
+				</div>
+				<div class="step" id="step-nine">
+					<p>BSP downplayed the target breach, saying it was <strong>"transitory"</strong>because the economy
+						was gaining ground from years of lockdown.</p>
+				</div>
+				<div class="step" id="step-ten">
+					<p>Indeed, inflation went back to 3.7% by June 2021 and dropped further to 3% by January 2022.</p>
+				</div>
+				<div class="step" id="step-eleven">
+					<p>But Ukraine was invaded in February, and with it came an oil price surge that saw inflation shot
+						back up to 4.9% in April.</p>
+				</div>
+				<div class="step" id="step-twelve">
+					<p>The central bank, before May 19, did not act to respond to rising commodity costs and kept rates
+						at record-lows.</p>
+				</div>
+				<div class="step" id="step-thirteen">
+					<p>That meant inflation was hovering more than double the <span style="background: #0397cc"><span
+								class="has-text-white has-text-weight-bold">benchmark rate</span></span>. Put simply,
+						<span style="background: #d62728"><span
+								class="has-text-white has-text-weight-bold">inflation</span></span> is eating up the
+						interest charged on money.</p>
+				</div>
+			</div>
+	</div>
+	</section>
+
+	<script>
+
+		function showred() {
+			// annotation: #show inflation line and annotations
+			d3.selectAll("[data-name='inflation-1']").classed('hidden', false)
+			d3.selectAll("[data-name='inflation-2']").classed('hidden', false)
+			d3.selectAll("[data-name='inflation-3']").classed('hidden', false)
+			d3.selectAll("[data-name='inflation-4']").classed('hidden', false)
+			d3.selectAll("[data-name='inflation-5']").classed('hidden', false)
+			d3.selectAll("[data-name='inflation-6']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-1']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-4']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-5']").classed('hidden', false)
+			d3.selectAll(".g-ukraine").classed('hidden', false)
+			d3.selectAll(".g-shutdowns").classed('hidden', false)
+			d3.selectAll(".g-rice-inflation").classed('hidden', false)
+
+		}
+
+		function hidered() {
+			// annotation: #hide inflation line and annotations
+			d3.selectAll("[data-name='inflation-1']").classed('hidden', true)
+			d3.selectAll("[data-name='inflation-2']").classed('hidden', true)
+			d3.selectAll("[data-name='inflation-3']").classed('hidden', true)
+			d3.selectAll("[data-name='inflation-4']").classed('hidden', true)
+			d3.selectAll("[data-name='inflation-5']").classed('hidden', true)
+			d3.selectAll("[data-name='inflation-6']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-1']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-4']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-5']").classed('hidden', true)
+			d3.selectAll(".g-ukraine").classed('hidden', true)
+			d3.selectAll(".g-shutdowns").classed('hidden', true)
+			d3.selectAll(".g-rice-inflation").classed('hidden', true)
+
+		}
+
+		function showblue() {
+			// annotation: #show rates and annotations
+			d3.selectAll("[data-name='rate-1']").classed('hidden', false)
+			d3.selectAll("[data-name='rate-2']").classed('hidden', false)
+			d3.selectAll("[data-name='rate-3']").classed('hidden', false)
+			d3.selectAll("[data-name='rate-4']").classed('hidden', false)
+			d3.selectAll("[data-name='rate-5']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-2']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-3']").classed('hidden', false)
+			d3.selectAll(".g-begin-hike").classed('hidden', false)
+			d3.selectAll(".g-pandemic-slash").classed('hidden', false)
+
+		}
+
+		function hideblue() {
+			// annotation: #hide rates and annotations
+			d3.selectAll("[data-name='rate-1']").classed('hidden', true)
+			d3.selectAll("[data-name='rate-2']").classed('hidden', true)
+			d3.selectAll("[data-name='rate-3']").classed('hidden', true)
+			d3.selectAll("[data-name='rate-4']").classed('hidden', true)
+			d3.selectAll("[data-name='rate-5']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-2']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-3']").classed('hidden', true)
+			d3.selectAll(".g-begin-hike").classed('hidden', true)
+			d3.selectAll(".g-pandemic-slash").classed('hidden', true)
+
+		}
+
+		function showlowbase() {
+			// show low base annotation
+			d3.selectAll(".g-low-base").classed('hidden', false)
+
+		}
+
+		function hidelowbase() {
+			// show low base annotation
+			d3.selectAll(".g-low-base").classed('hidden', true)
+
+		}
+
+		function showreopening() {
+			// show low base annotation
+			d3.selectAll(".g-reopening").classed('hidden', false)
+
+		}
+
+		function hidereopening() {
+			// show low base annotation
+			d3.selectAll(".g-reopening").classed('hidden', true)
+
+		}
+
+		/* Scrollytelling code goes under here */
+
+		d3.select("#step-zero").on('stepout', function (e) {
+			if (e.detail.direction === 'up') {
+				// undo the changes from step zero
+				showblue()
+				showred()
+				showlowbase()
+				showreopening()
+			}
+		})
+
+		d3.select("#step-zero").on('stepin', function (e) {
+			console.log("Got to step zero")
+
+			// do changes for step zero
+			hideblue()
+			hidered()
+			hidelowbase()
+			hidereopening()
+
+		})
+
+		d3.select("#step-one").on('stepout', function (e) {
+			if (e.detail.direction === 'up') {
+				// undo the changes from step one
+				d3.selectAll("[data-name='inflation-1']").classed('hidden', true)
+				d3.selectAll("[data-name='arrow-1']").classed('hidden', true)
+				d3.selectAll(".g-rice-inflation").classed('hidden', true)
+			}
+		})
+
+		d3.select("#step-one").on('stepin', function (e) {
+			console.log("Got to step one")
+
+			// do changes for step one
+			d3.selectAll("[data-name='inflation-1']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-1']").classed('hidden', false)
+			d3.selectAll(".g-rice-inflation").classed('hidden', false)
 
 
-		   // undo changes from step five
-		d3.selectAll("[data-name='rate-3']").classed('hidden', true)
-		d3.selectAll("[data-name='arrow-3']").classed('hidden', true)
-		d3.selectAll(".g-pandemic-slash").classed('hidden', true)
-      })
 
-	  d3.select("#step-five").on('stepin', function(e) {
-        
-		// do changes for step five
-		d3.selectAll("[data-name='rate-3']").classed('hidden', false)
-		d3.selectAll("[data-name='arrow-3']").classed('hidden', false)
-		d3.selectAll(".g-pandemic-slash").classed('hidden', false)
+			// undo changes from step two
+			d3.selectAll("[data-name='rate-1']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-2']").classed('hidden', true)
+			d3.selectAll(".g-begin-hike").classed('hidden', true)
+		})
 
-		 // undo changes from step six
-		 d3.selectAll("[data-name='rate-4']").classed('hidden', true)
-      })
+		d3.select("#step-two").on('stepin', function (e) {
 
-	  d3.select("#step-six").on('stepin', function(e) {
-        
-		// do changes for step six
-		d3.selectAll("[data-name='rate-4']").classed('hidden', false)
+			// do changes for step two
+			console.log("Got to step two")
+			d3.selectAll("[data-name='rate-1']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-2']").classed('hidden', false)
+			d3.selectAll(".g-begin-hike").classed('hidden', false)
 
-		  // undo changes from step seven
-		  d3.selectAll("[data-name='inflation-3']").classed('hidden', true)
-		  d3.selectAll("[data-name='arrow-4']").classed('hidden', true)
-		  d3.selectAll(".g-shutdowns").classed('hidden', true)
-      })
+			// undo changes from step three
+			d3.selectAll("[data-name='inflation-2']").classed('hidden', true)
+			hidelowbase()
+		})
 
-		d3.select("#step-seven").on('stepin', function(e) {
+		d3.select("#step-three").on('stepin', function (e) {
+
+			// do changes for step three
+			d3.selectAll("[data-name='inflation-2']").classed('hidden', false)
+			showlowbase()
+
+			// undo changes from step four
+			d3.selectAll("[data-name='rate-2']").classed('hidden', true)
+		})
+
+		d3.select("#step-four").on('stepin', function (e) {
+
+			// do changes for step four
+			d3.selectAll("[data-name='rate-2']").classed('hidden', false)
+
+
+			// undo changes from step five
+			d3.selectAll("[data-name='rate-3']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-3']").classed('hidden', true)
+			d3.selectAll(".g-pandemic-slash").classed('hidden', true)
+		})
+
+		d3.select("#step-five").on('stepin', function (e) {
+
+			// do changes for step five
+			d3.selectAll("[data-name='rate-3']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-3']").classed('hidden', false)
+			d3.selectAll(".g-pandemic-slash").classed('hidden', false)
+
+			// undo changes from step six
+			d3.selectAll("[data-name='rate-4']").classed('hidden', true)
+		})
+
+		d3.select("#step-six").on('stepin', function (e) {
+
+			// do changes for step six
+			d3.selectAll("[data-name='rate-4']").classed('hidden', false)
+
+			// undo changes from step seven
+			d3.selectAll("[data-name='inflation-3']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-4']").classed('hidden', true)
+			d3.selectAll(".g-shutdowns").classed('hidden', true)
+		})
+
+		d3.select("#step-seven").on('stepin', function (e) {
 
 			// do changes for step seven
-		  console.log("Got to step seven")
-		  d3.selectAll("[data-name='inflation-3']").classed('hidden', false)
-		  d3.selectAll("[data-name='arrow-4']").classed('hidden', false)
-		  d3.selectAll(".g-shutdowns").classed('hidden', false)
+			console.log("Got to step seven")
+			d3.selectAll("[data-name='inflation-3']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-4']").classed('hidden', false)
+			d3.selectAll(".g-shutdowns").classed('hidden', false)
 
 
-		 // undo changes from step eight
-		 d3.selectAll("[data-name='inflation-4']").classed('hidden', true)
-		 hidereopening()
-
-	})
-  
-		d3.select("#step-eight").on('stepin', function(e) {
-		  console.log("Got to step eight")
-  
-		  // do changes for step eight
-		  d3.selectAll("[data-name='inflation-4']").classed('hidden', false)
-		  showreopening()
-
-  
-		   // undo changes from step nine
-		})
-  
-		d3.select("#step-nine").on('stepin', function(e) {   
-  
-		  // do changes for step nine
-
-  
-			 // undo changes from step ten
-			 d3.selectAll("[data-name='inflation-5']").classed('hidden', true)
-
-		})
-  
-		d3.select("#step-ten").on('stepin', function(e) {
-		  
-		  // do changes for step ten
-		  d3.selectAll("[data-name='inflation-5']").classed('hidden', false)
-  
-		   // undo changes from step eleven
-		  d3.selectAll("[data-name='inflation-6']").classed('hidden', true)
-		  d3.selectAll("[data-name='arrow-5']").classed('hidden', true)
-		  d3.selectAll(".g-ukraine").classed('hidden', true)
-		})
-  
-		d3.select("#step-eleven").on('stepin', function(e) {
-		  
-		  // do changes for step eleven
-		  d3.selectAll("[data-name='inflation-6']").classed('hidden', false)
-		  d3.selectAll("[data-name='arrow-5']").classed('hidden', false)
-		  d3.selectAll(".g-ukraine").classed('hidden', false)
-
-		  // undo changes froom step twelve
-		  d3.selectAll("[data-name='rate-5']").classed('hidden', true)
-		})
-
-		d3.select("#step-twelve").on('stepin', function(e) {
-		  
-		  // do changes for step twelve
-		  d3.selectAll("[data-name='rate-5']").classed('hidden', false)
-  
-		   // undo changes from step thirteen
-		})
-  
-		d3.select("#step-thirteen").on('stepin', function(e) {
-		  
-		  // do changes for step thirteen
+			// undo changes from step eight
+			d3.selectAll("[data-name='inflation-4']").classed('hidden', true)
+			hidereopening()
 
 		})
 
+		d3.select("#step-eight").on('stepin', function (e) {
+			console.log("Got to step eight")
 
-</script>
+			// do changes for step eight
+			d3.selectAll("[data-name='inflation-4']").classed('hidden', false)
+			showreopening()
 
-<script>
-    const scroller = scrollama();
 
-	scroller
-		.setup({
-			step: "#scrolly .scrolly-overlay .step",
-			offset: 0.5,
-			debug: false
+			// undo changes from step nine
 		})
-		.onStepEnter(function({ element, index, direction}) {
-			const event = new CustomEvent('stepin', { detail: { direction: direction } })
-			element.dispatchEvent(event);
+
+		d3.select("#step-nine").on('stepin', function (e) {
+
+			// do changes for step nine
+
+
+			// undo changes from step ten
+			d3.selectAll("[data-name='inflation-5']").classed('hidden', true)
+
 		})
-		.onStepExit(function({ element, index, direction }) {
-			const event = new CustomEvent('stepout', { detail: { direction: direction } })
-			element.dispatchEvent(event);
-		});
 
-	window.addEventListener("resize", scroller.resize);
-    </script>
+		d3.select("#step-ten").on('stepin', function (e) {
+
+			// do changes for step ten
+			d3.selectAll("[data-name='inflation-5']").classed('hidden', false)
+
+			// undo changes from step eleven
+			d3.selectAll("[data-name='inflation-6']").classed('hidden', true)
+			d3.selectAll("[data-name='arrow-5']").classed('hidden', true)
+			d3.selectAll(".g-ukraine").classed('hidden', true)
+		})
+
+		d3.select("#step-eleven").on('stepin', function (e) {
+
+			// do changes for step eleven
+			d3.selectAll("[data-name='inflation-6']").classed('hidden', false)
+			d3.selectAll("[data-name='arrow-5']").classed('hidden', false)
+			d3.selectAll(".g-ukraine").classed('hidden', false)
+
+			// undo changes froom step twelve
+			d3.selectAll("[data-name='rate-5']").classed('hidden', true)
+		})
+
+		d3.select("#step-twelve").on('stepin', function (e) {
+
+			// do changes for step twelve
+			d3.selectAll("[data-name='rate-5']").classed('hidden', false)
+
+			// undo changes from step thirteen
+		})
+
+		d3.select("#step-thirteen").on('stepin', function (e) {
+
+			// do changes for step thirteen
+
+		})
 
 
-<script src="https://pmagtulis.github.io/projects/socials.js"></script>
-<script src="https://pmagtulis.github.io/projects/mobile.js"></script>
+	</script>
+
+	<script>
+		const scroller = scrollama();
+
+		scroller
+			.setup({
+				step: "#scrolly .scrolly-overlay .step",
+				offset: 0.5,
+				debug: false
+			})
+			.onStepEnter(function ({ element, index, direction }) {
+				const event = new CustomEvent('stepin', { detail: { direction: direction } })
+				element.dispatchEvent(event);
+			})
+			.onStepExit(function ({ element, index, direction }) {
+				const event = new CustomEvent('stepout', { detail: { direction: direction } })
+				element.dispatchEvent(event);
+			});
+
+		window.addEventListener("resize", scroller.resize);
+	</script>
+
+
+	<script src="https://pmagtulis.github.io/projects/socials.js"></script>
+	<script src="https://pmagtulis.github.io/projects/mobile.js"></script>
 
 </body>
 <footer class="footer">
-  <div class="content has-text-centered">
-	<p>
-	  Made using Bulma by <a href="mailto:ppm2130@columbia.edu">Prinz Magtulis</a>. Copyright 2022.
-	</p>
-  </div>
+	<div class="content has-text-centered">
+		<p>
+			Made using Bulma by <a href="mailto:ppm2130@columbia.edu">Prinz Magtulis</a>. Copyright 2022.
+		</p>
+	</div>
 </footer>
-</html>	
+
+</html>
