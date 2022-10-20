@@ -25,3 +25,30 @@ hr {
   background-color: grey;
   opacity: 0.5;
 }
+
+.share-btn-container a i {
+  font-size: 24px;
+  margin: 8px 0;
+  transition: 500ms;
+  padding: 8px;
+}
+
+.share-btn-container i:hover {
+  color: #485fc7;
+}
+
+.share-btn-container .fa-facebook {
+  color: #fff
+}
+
+.share-btn-container .fa-twitter {
+  color: #fff
+}
+
+.share-btn-container .fa-linkedin {
+  color: #fff
+}
+
+.share-btn-container .fa-whatsapp {
+  color: #fff
+}
