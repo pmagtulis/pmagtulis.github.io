@@ -139,6 +139,7 @@ a {
 .description {
   font-size: 14px;
   margin-top: 0.25em;
+  text-align: center;
 }
 
 h1 {
@@ -256,9 +257,9 @@ footer {
 }
 
 #hamburger-menu {
-  position: fixed;
+  position:relative;
   top: 20px;
-  right: 20px;
+  right: -15px;
   width: 50px;
   height: 40px;
   display: none;
@@ -397,6 +398,14 @@ footer {
     margin: 5%;
     padding-bottom: 20%;
     display: grid;
+  }
+
+  .intro > p {
+    font-size: 22px;
+  }
+
+  .cover {
+    font-size: 22px;
   }
 
   .image {
