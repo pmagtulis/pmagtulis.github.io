@@ -392,6 +392,10 @@ footer {
     float: left;
   }
 
+  .row {
+    padding-left: 20px;
+  }
+
   .intro {
     top: 20%;
     margin: 5%;
