@@ -284,10 +284,11 @@ footer {
 #hamburger-menu #sidebar-menu {
   visibility: hidden;
   position: fixed;
+  font-size: 20px;
   top: 0;
   right: -100px;
-  width: 200px;
-  height: 100%;
+  width: 150px;
+  height: 20%;
   transition: 0.3s;
   background-color: #33302e;
   padding: 0px 10px;
