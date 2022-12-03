@@ -134,6 +134,7 @@ a {
 .image_title {
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
 }
 
 .description {
@@ -151,18 +152,10 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 0.1em;
   word-spacing: 0.2em;
   line-height: inherit;
-  color: #33302e;
-}
-
-h3 {
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  word-spacing: 0.2em;
   color: #33302e;
 }
 
@@ -178,14 +171,19 @@ h3 {
   text-align: right;
 }
 
+h1 > a:hover {
+  color: #33302e;
+  font-weight: lighter;
+}
+
 h2 > a:hover {
   color: #33302e;
   font-weight: bold;
 }
 
-h1 > a:hover {
+p > a:hover {
   color: #33302e;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 li > a:hover {
@@ -283,7 +281,7 @@ footer {
 
 #hamburger-menu #sidebar-menu {
   visibility: hidden;
-  position: fixed;
+  position:fixed;
   font-size: 20px;
   top: 0;
   right: -100px;
@@ -406,7 +404,7 @@ footer {
   }
 
   .cover {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .image {
@@ -415,6 +413,10 @@ footer {
 
   .alignright {
     width: 24%;
+  }
+
+  .button-container > h2 {
+    font-size: 18px;
   }
 
   #main-menu {
