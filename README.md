@@ -2,7 +2,7 @@
 
 # What is this?
 
-HTML for my portfolio website created with **Bulma**. Access it [here](https://pmagtulis.github.io). This also serves as central repository of my
+Code for my portfolio website. Access it [here](https://pmagtulis.github.io). This also serves as central repository of my
 projects, both personal and in fulfillment of requirements for my graduate degree at Columbia.
 
 # What's in here?
