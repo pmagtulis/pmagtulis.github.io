@@ -120,7 +120,6 @@ a {
 }
 
 .photo {
-  /* align-items: center; */
   vertical-align: text-top;
   display: inline-flex;
   width: 600px;
