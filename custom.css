@@ -1,6 +1,14 @@
 html,
 body {
   overflow-x: hidden;
+  color: #33302e;
+  font-family: Helvetica, sans-serif;
+}
+
+.navbar .is-dark,
+.navbar-brand,
+.navbar-menu {
+  background-color: #ffff;
 }
 
 body {
@@ -9,7 +17,7 @@ body {
 
 .footer {
   padding: 8px;
-  margin-top: 12px;          
+  margin-top: 12px;
 }
 
 .section {
@@ -34,21 +42,25 @@ hr {
 }
 
 .share-btn-container i:hover {
-  color: #485fc7;
+  color: #33302e;
 }
 
 .share-btn-container .fa-facebook {
-  color: #fff
+  color: #33302e;
 }
 
 .share-btn-container .fa-twitter {
-  color: #fff
+  color: #33302e;
 }
 
 .share-btn-container .fa-linkedin {
-  color: #fff
+  color: #33302e;
 }
 
 .share-btn-container .fa-whatsapp {
-  color: #fff
+  color: #33302e;
+}
+
+a.navbar-item {
+  color: #33302e;
 }
