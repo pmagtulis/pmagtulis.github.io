@@ -115,8 +115,18 @@
 
     <style>
       .has-bg-img {
-        background: url('https://pmagtulis.github.io/assets/inflation-title.png');
+        background: url("https://pmagtulis.github.io/assets/inflation-title.png");
         background-size: cover;
+      }
+
+      .navbar .is-dark,
+      .navbar-brand,
+      .navbar-menu {
+        background-color: #ffff;
+      }
+
+      .navbar-burger span {
+        background-color: #33302e;
       }
 
       .share-btn-container a i {
@@ -126,24 +136,24 @@
         padding: 8px;
       }
 
-      .share-btn-container i:hover {
-        color: #485fc7;
-      }
-
       .share-btn-container .fa-facebook {
-        color: #fff;
+        color: #33302e;
       }
 
       .share-btn-container .fa-twitter {
-        color: #fff;
+        color: #33302e;
       }
 
       .share-btn-container .fa-linkedin {
-        color: #fff;
+        color: #33302e;
       }
 
       .share-btn-container .fa-whatsapp {
-        color: #fff;
+        color: #33302e;
+      }
+
+      a .navbar-item {
+        color: #33302e;
       }
 
       .footer {
@@ -1521,184 +1531,184 @@
       <script>
         function hidereda() {
           // annotation: #red-line-a
-          d3.selectAll("[data-name='red-line-a']").classed('hidden', true);
+          d3.selectAll("[data-name='red-line-a']").classed("hidden", true);
         }
 
         function showreda() {
           // annotation: #red-line-a
-          d3.selectAll("[data-name='red-line-a']").classed('hidden', false);
+          d3.selectAll("[data-name='red-line-a']").classed("hidden", false);
         }
 
         function hideredb() {
           // annotation: #red-line-b
-          d3.selectAll("[data-name='red-line-b']").classed('hidden', true);
+          d3.selectAll("[data-name='red-line-b']").classed("hidden", true);
         }
 
         function showredb() {
           // annotation: #red-line-b
-          d3.selectAll("[data-name='red-line-b']").classed('hidden', false);
+          d3.selectAll("[data-name='red-line-b']").classed("hidden", false);
         }
 
         function hideredc() {
           // annotation: #red-line-c
-          d3.selectAll("[data-name='red-line-c']").classed('hidden', true);
+          d3.selectAll("[data-name='red-line-c']").classed("hidden", true);
         }
 
         function showredc() {
           // annotation: #red-line-c
-          d3.selectAll("[data-name='red-line-c']").classed('hidden', false);
+          d3.selectAll("[data-name='red-line-c']").classed("hidden", false);
         }
 
         function hideredd() {
           // annotation: #red-line-d
-          d3.selectAll("[data-name='red-line-d']").classed('hidden', true);
+          d3.selectAll("[data-name='red-line-d']").classed("hidden", true);
         }
 
         function showredd() {
           // annotation: #red-line-d
-          d3.selectAll("[data-name='red-line-d']").classed('hidden', false);
+          d3.selectAll("[data-name='red-line-d']").classed("hidden", false);
         }
 
         function hiderede() {
           // annotation: #red-line-e
-          d3.selectAll("[data-name='red-line-e']").classed('hidden', true);
+          d3.selectAll("[data-name='red-line-e']").classed("hidden", true);
         }
 
         function showrede() {
           // annotation: #red-line-e
-          d3.selectAll("[data-name='red-line-e']").classed('hidden', false);
+          d3.selectAll("[data-name='red-line-e']").classed("hidden", false);
         }
 
         function hidearrow2() {
           // annotation: #arrow-2
-          d3.selectAll("[data-name='arrow-2']").classed('hidden', true);
+          d3.selectAll("[data-name='arrow-2']").classed("hidden", true);
         }
 
         function showarrow2() {
           // annotation: #arrow-2
-          d3.selectAll("[data-name='arrow-2']").classed('hidden', false);
+          d3.selectAll("[data-name='arrow-2']").classed("hidden", false);
         }
 
         function hidePandemictext() {
           // annotation: #pandemic text
-          d3.selectAll('.g-pandemic').classed('hidden', true);
+          d3.selectAll(".g-pandemic").classed("hidden", true);
         }
 
         function showPandemictext() {
           // annotation: #pandemic text
-          d3.selectAll('.g-pandemic').classed('hidden', false);
+          d3.selectAll(".g-pandemic").classed("hidden", false);
         }
 
         function hidearrow() {
           // annotation: #arrow
-          d3.selectAll("[data-name='arrow']").classed('hidden', true);
+          d3.selectAll("[data-name='arrow']").classed("hidden", true);
         }
 
         function showarrow() {
           // annotation: #arrow
-          d3.selectAll("[data-name='arrow']").classed('hidden', false);
+          d3.selectAll("[data-name='arrow']").classed("hidden", false);
         }
 
         function hidejun2022() {
           // annotation: #june 2022
-          d3.selectAll('.g-jun-2022').classed('hidden', true);
+          d3.selectAll(".g-jun-2022").classed("hidden", true);
         }
 
         function showjun2022() {
           // annotation: #june 2022
-          d3.selectAll('.g-jun-2022').classed('hidden', false);
+          d3.selectAll(".g-jun-2022").classed("hidden", false);
         }
 
         function hidearrow3() {
           // annotation: #arrow-3
-          d3.selectAll("[data-name='arrow-3']").classed('hidden', true);
+          d3.selectAll("[data-name='arrow-3']").classed("hidden", true);
         }
 
         function showarrow3() {
           // annotation: #arrow-3
-          d3.selectAll("[data-name='arrow-3']").classed('hidden', false);
+          d3.selectAll("[data-name='arrow-3']").classed("hidden", false);
         }
 
         function hidegfctext() {
           // annotation: #gfc text
-          d3.selectAll('.g-crisis').classed('hidden', true);
+          d3.selectAll(".g-crisis").classed("hidden", true);
         }
 
         function showgfctext() {
           // annotation: #gfc text
-          d3.selectAll('.g-crisis').classed('hidden', false);
+          d3.selectAll(".g-crisis").classed("hidden", false);
         }
 
         function hideall() {
           // annotation: #hide everything
-          d3.selectAll('.g-crisis').classed('hidden', true);
-          d3.selectAll("[data-name='arrow-2']").classed('hidden', true);
-          d3.selectAll("[data-name='arrow-3']").classed('hidden', true);
-          d3.selectAll('.g-jun-2022').classed('hidden', true);
-          d3.selectAll("[data-name='arrow']").classed('hidden', true);
-          d3.selectAll('.g-pandemic').classed('hidden', true);
-          d3.selectAll("[data-name='red-line-e']").classed('hidden', true);
-          d3.selectAll("[data-name='red-line-d']").classed('hidden', true);
-          d3.selectAll("[data-name='red-line-c']").classed('hidden', true);
-          d3.selectAll("[data-name='red-line-b']").classed('hidden', true);
-          d3.selectAll("[data-name='red-line-a']").classed('hidden', true);
+          d3.selectAll(".g-crisis").classed("hidden", true);
+          d3.selectAll("[data-name='arrow-2']").classed("hidden", true);
+          d3.selectAll("[data-name='arrow-3']").classed("hidden", true);
+          d3.selectAll(".g-jun-2022").classed("hidden", true);
+          d3.selectAll("[data-name='arrow']").classed("hidden", true);
+          d3.selectAll(".g-pandemic").classed("hidden", true);
+          d3.selectAll("[data-name='red-line-e']").classed("hidden", true);
+          d3.selectAll("[data-name='red-line-d']").classed("hidden", true);
+          d3.selectAll("[data-name='red-line-c']").classed("hidden", true);
+          d3.selectAll("[data-name='red-line-b']").classed("hidden", true);
+          d3.selectAll("[data-name='red-line-a']").classed("hidden", true);
         }
 
         function showall() {
           // annotation: #show everything
-          d3.selectAll('.g-crisis').classed('hidden', false);
-          d3.selectAll("[data-name='arrow-2']").classed('hidden', false);
-          d3.selectAll("[data-name='arrow-3']").classed('hidden', false);
-          d3.selectAll('.g-jun-2022').classed('hidden', false);
-          d3.selectAll("[data-name='arrow']").classed('hidden', false);
-          d3.selectAll('.g-pandemic').classed('hidden', false);
-          d3.selectAll("[data-name='red-line-e']").classed('hidden', false);
-          d3.selectAll("[data-name='red-line-d']").classed('hidden', false);
-          d3.selectAll("[data-name='red-line-c']").classed('hidden', false);
-          d3.selectAll("[data-name='red-line-b']").classed('hidden', false);
-          d3.selectAll("[data-name='red-line-a']").classed('hidden', false);
+          d3.selectAll(".g-crisis").classed("hidden", false);
+          d3.selectAll("[data-name='arrow-2']").classed("hidden", false);
+          d3.selectAll("[data-name='arrow-3']").classed("hidden", false);
+          d3.selectAll(".g-jun-2022").classed("hidden", false);
+          d3.selectAll("[data-name='arrow']").classed("hidden", false);
+          d3.selectAll(".g-pandemic").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-e']").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-d']").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-c']").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-b']").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-a']").classed("hidden", false);
         }
 
         function showchartonly() {
           // annotation: #show just assets
-          d3.selectAll("[data-name='red-line-e']").classed('hidden', false);
-          d3.selectAll("[data-name='red-line-d']").classed('hidden', false);
-          d3.selectAll("[data-name='red-line-c']").classed('hidden', false);
-          d3.selectAll("[data-name='red-line-b']").classed('hidden', false);
-          d3.selectAll("[data-name='red-line-a']").classed('hidden', false);
-          d3.selectAll('.g-crisis').classed('hidden', true);
-          d3.selectAll("[data-name='arrow-2']").classed('hidden', true);
-          d3.selectAll("[data-name='arrow-3']").classed('hidden', true);
-          d3.selectAll('.g-jun-2022').classed('hidden', true);
-          d3.selectAll("[data-name='arrow']").classed('hidden', true);
-          d3.selectAll('.g-pandemic').classed('hidden', true);
+          d3.selectAll("[data-name='red-line-e']").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-d']").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-c']").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-b']").classed("hidden", false);
+          d3.selectAll("[data-name='red-line-a']").classed("hidden", false);
+          d3.selectAll(".g-crisis").classed("hidden", true);
+          d3.selectAll("[data-name='arrow-2']").classed("hidden", true);
+          d3.selectAll("[data-name='arrow-3']").classed("hidden", true);
+          d3.selectAll(".g-jun-2022").classed("hidden", true);
+          d3.selectAll("[data-name='arrow']").classed("hidden", true);
+          d3.selectAll(".g-pandemic").classed("hidden", true);
         }
 
         /* Scrollytelling code goes under here */
 
-        d3.select('#step-zero').on('stepout', function (e) {
-          if (e.detail.direction === 'up') {
+        d3.select("#step-zero").on("stepout", function (e) {
+          if (e.detail.direction === "up") {
             // undo the changes from step zero
             showall();
           }
         });
 
-        d3.select('#step-zero').on('stepin', function (e) {
-          console.log('Got to step zero');
+        d3.select("#step-zero").on("stepin", function (e) {
+          console.log("Got to step zero");
 
           // do changes for step zero
           showchartonly();
         });
 
-        d3.select('#step-one').on('stepout', function (e) {
-          if (e.detail.direction === 'up') {
+        d3.select("#step-one").on("stepout", function (e) {
+          if (e.detail.direction === "up") {
             // undo the changes from step one
             showchart();
           }
         });
 
-        d3.select('#step-one').on('stepin', function (e) {
-          console.log('Got to step one');
+        d3.select("#step-one").on("stepin", function (e) {
+          console.log("Got to step one");
 
           // do changes for step one
           hideall();
@@ -1709,9 +1719,9 @@
           hidejun2022();
         });
 
-        d3.select('#step-two').on('stepin', function (e) {
+        d3.select("#step-two").on("stepin", function (e) {
           // do changes for step two
-          console.log('Got to step two');
+          console.log("Got to step two");
           showreda();
           showarrow();
           showjun2022();
@@ -1722,7 +1732,7 @@
           hidegfctext();
         });
 
-        d3.select('#step-three').on('stepin', function (e) {
+        d3.select("#step-three").on("stepin", function (e) {
           // do changes for step three
           showredb();
           showarrow3();
@@ -1732,7 +1742,7 @@
           hideredc();
         });
 
-        d3.select('#step-four').on('stepin', function (e) {
+        d3.select("#step-four").on("stepin", function (e) {
           // do changes for step four
           showredc();
 
@@ -1740,7 +1750,7 @@
           hideredd();
         });
 
-        d3.select('#step-five').on('stepin', function (e) {
+        d3.select("#step-five").on("stepin", function (e) {
           // do changes for step five
           showredd();
 
@@ -1750,7 +1760,7 @@
           hidePandemictext();
         });
 
-        d3.select('#step-six').on('stepin', function (e) {
+        d3.select("#step-six").on("stepin", function (e) {
           // do changes for step six
           showrede();
           showarrow2();
@@ -3338,142 +3348,142 @@
     <script>
       function hidebluea() {
         // annotation: #blue-line-a
-        d3.selectAll("[data-name='blue-line-a']").classed('hidden', true);
+        d3.selectAll("[data-name='blue-line-a']").classed("hidden", true);
       }
 
       function showbluea() {
         // annotation: #blue-line-a
-        d3.selectAll("[data-name='blue-line-a']").classed('hidden', false);
+        d3.selectAll("[data-name='blue-line-a']").classed("hidden", false);
       }
 
       function hideblueb() {
         // annotation: #blue-line-b
-        d3.selectAll("[data-name='blue-line-b']").classed('hidden', true);
+        d3.selectAll("[data-name='blue-line-b']").classed("hidden", true);
       }
 
       function showblueb() {
         // annotation: #blue-line-b
-        d3.selectAll("[data-name='blue-line-b']").classed('hidden', false);
+        d3.selectAll("[data-name='blue-line-b']").classed("hidden", false);
       }
 
       function hidebluec() {
         // annotation: #blue-line-c
-        d3.selectAll("[data-name='blue-line-c']").classed('hidden', true);
+        d3.selectAll("[data-name='blue-line-c']").classed("hidden", true);
       }
 
       function showbluec() {
         // annotation: #blue-line-c
-        d3.selectAll("[data-name='blue-line-c']").classed('hidden', false);
+        d3.selectAll("[data-name='blue-line-c']").classed("hidden", false);
       }
 
       function hideblued() {
         // annotation: #blue-line-d
-        d3.selectAll("[data-name='blue-line-d']").classed('hidden', true);
+        d3.selectAll("[data-name='blue-line-d']").classed("hidden", true);
       }
 
       function showblued() {
         // annotation: #blue-line-d
-        d3.selectAll("[data-name='blue-line-d']").classed('hidden', false);
+        d3.selectAll("[data-name='blue-line-d']").classed("hidden", false);
       }
 
       function hideoilarrow() {
         // annotation: #arrow-2
-        d3.selectAll("[data-name='oil-gdp-arrow']").classed('hidden', true);
+        d3.selectAll("[data-name='oil-gdp-arrow']").classed("hidden", true);
       }
 
       function showoilarrow() {
         // annotation: #arrow-2
-        d3.selectAll("[data-name='oil-gdp-arrow']").classed('hidden', false);
+        d3.selectAll("[data-name='oil-gdp-arrow']").classed("hidden", false);
       }
 
       function hideoil() {
         // annotation: #oil text
-        d3.selectAll('.g-oil-gdp').classed('hidden', true);
+        d3.selectAll(".g-oil-gdp").classed("hidden", true);
       }
 
       function showoil() {
         // annotation: #oil text
-        d3.selectAll('.g-oil-gdp').classed('hidden', false);
+        d3.selectAll(".g-oil-gdp").classed("hidden", false);
       }
 
       function hidegfcgdp() {
         // annotation: #GFC GDP text
-        d3.selectAll('.g-gfc-gdp').classed('hidden', true);
+        d3.selectAll(".g-gfc-gdp").classed("hidden", true);
       }
 
       function showgfcgdp() {
         // annotation: #GFC GDP text
-        d3.selectAll('.g-gfc-gdp').classed('hidden', false);
+        d3.selectAll(".g-gfc-gdp").classed("hidden", false);
       }
 
       function hideq1gdp() {
         // annotation: #q1 gdp
-        d3.selectAll('.g-q1-2022-gdp').classed('hidden', true);
+        d3.selectAll(".g-q1-2022-gdp").classed("hidden", true);
       }
 
       function showq1gdp() {
         // annotation: #q1 gdp
-        d3.selectAll('.g-q1-2022-gdp').classed('hidden', false);
+        d3.selectAll(".g-q1-2022-gdp").classed("hidden", false);
       }
 
       function hidegfcarrow() {
         // annotation: #arrow
-        d3.selectAll("[data-name='gfc-gdp-arrow']").classed('hidden', true);
+        d3.selectAll("[data-name='gfc-gdp-arrow']").classed("hidden", true);
       }
 
       function showgfcarrow() {
         // annotation: #arrow
-        d3.selectAll("[data-name='gfc-gdp-arrow']").classed('hidden', false);
+        d3.selectAll("[data-name='gfc-gdp-arrow']").classed("hidden", false);
       }
 
       function hideq1gdparrow() {
         // annotation: #arrow
-        d3.selectAll("[data-name='q1-gdp-arrow']").classed('hidden', true);
+        d3.selectAll("[data-name='q1-gdp-arrow']").classed("hidden", true);
       }
 
       function showq1gdparrow() {
         // annotation: #arrow
-        d3.selectAll("[data-name='q1-gdp-arrow']").classed('hidden', false);
+        d3.selectAll("[data-name='q1-gdp-arrow']").classed("hidden", false);
       }
 
       function hidegdpall() {
         // annotation: #hide everything
-        d3.selectAll('.g-gfc-gdp').classed('hidden', true);
-        d3.selectAll('.g-oil-gdp').classed('hidden', true);
-        d3.selectAll("[data-name='gfc-gdp-arrow']").classed('hidden', true);
-        d3.selectAll("[data-name='oil-gdp-arrow']").classed('hidden', true);
-        d3.selectAll("[data-name='blue-line-c']").classed('hidden', true);
-        d3.selectAll("[data-name='blue-line-b']").classed('hidden', true);
-        d3.selectAll("[data-name='blue-line-a']").classed('hidden', true);
-        d3.selectAll("[data-name='q1-gdp-arrow']").classed('hidden', true);
-        d3.selectAll("[data-name='blue-line-d']").classed('hidden', true);
-        d3.selectAll('.g-q1-2022-gdp').classed('hidden', true);
+        d3.selectAll(".g-gfc-gdp").classed("hidden", true);
+        d3.selectAll(".g-oil-gdp").classed("hidden", true);
+        d3.selectAll("[data-name='gfc-gdp-arrow']").classed("hidden", true);
+        d3.selectAll("[data-name='oil-gdp-arrow']").classed("hidden", true);
+        d3.selectAll("[data-name='blue-line-c']").classed("hidden", true);
+        d3.selectAll("[data-name='blue-line-b']").classed("hidden", true);
+        d3.selectAll("[data-name='blue-line-a']").classed("hidden", true);
+        d3.selectAll("[data-name='q1-gdp-arrow']").classed("hidden", true);
+        d3.selectAll("[data-name='blue-line-d']").classed("hidden", true);
+        d3.selectAll(".g-q1-2022-gdp").classed("hidden", true);
       }
 
       function showgdpall() {
         // annotation: #show everything
-        d3.selectAll('.g-gfc-gdp').classed('hidden', false);
-        d3.selectAll('.g-oil-gdp').classed('hidden', false);
-        d3.selectAll("[data-name='gfc-gdp-arrow']").classed('hidden', false);
-        d3.selectAll("[data-name='oil-gdp-arrow']").classed('hidden', false);
-        d3.selectAll("[data-name='blue-line-c']").classed('hidden', false);
-        d3.selectAll("[data-name='blue-line-b']").classed('hidden', false);
-        d3.selectAll("[data-name='blue-line-a']").classed('hidden', false);
-        d3.selectAll("[data-name='q1-gdp-arrow']").classed('hidden', false);
-        d3.selectAll("[data-name='blue-line-d']").classed('hidden', false);
-        d3.selectAll('.g-q1-2022-gdp').classed('hidden', false);
+        d3.selectAll(".g-gfc-gdp").classed("hidden", false);
+        d3.selectAll(".g-oil-gdp").classed("hidden", false);
+        d3.selectAll("[data-name='gfc-gdp-arrow']").classed("hidden", false);
+        d3.selectAll("[data-name='oil-gdp-arrow']").classed("hidden", false);
+        d3.selectAll("[data-name='blue-line-c']").classed("hidden", false);
+        d3.selectAll("[data-name='blue-line-b']").classed("hidden", false);
+        d3.selectAll("[data-name='blue-line-a']").classed("hidden", false);
+        d3.selectAll("[data-name='q1-gdp-arrow']").classed("hidden", false);
+        d3.selectAll("[data-name='blue-line-d']").classed("hidden", false);
+        d3.selectAll(".g-q1-2022-gdp").classed("hidden", false);
       }
       /* Scrollytelling code goes under here */
 
-      d3.select('#step-seven').on('stepout', function (e) {
-        if (e.detail.direction === 'up') {
+      d3.select("#step-seven").on("stepout", function (e) {
+        if (e.detail.direction === "up") {
           // undo the changes from step eight
           showgdpall();
         }
       });
 
-      d3.select('#step-seven').on('stepin', function (e) {
-        console.log('Got to step seven');
+      d3.select("#step-seven").on("stepin", function (e) {
+        console.log("Got to step seven");
         hidegdpall();
 
         // undo changes from step eight
@@ -3482,8 +3492,8 @@
         hideoil();
       });
 
-      d3.select('#step-eight').on('stepin', function (e) {
-        console.log('Got to step eight');
+      d3.select("#step-eight").on("stepin", function (e) {
+        console.log("Got to step eight");
 
         // do changes for step eight
         showbluea();
@@ -3495,23 +3505,23 @@
         hidegfcgdp();
       });
 
-      d3.select('#step-nine').on('stepin', function (e) {
+      d3.select("#step-nine").on("stepin", function (e) {
         // do changes for step nine
-        console.log('Got to step nine');
+        console.log("Got to step nine");
         showgfcarrow();
         showgfcgdp();
 
         // undo changes from step ten
       });
 
-      d3.select('#step-ten').on('stepin', function (e) {
+      d3.select("#step-ten").on("stepin", function (e) {
         // do changes for step ten
 
         // undo changes from step eleven
         hideblueb();
       });
 
-      d3.select('#step-eleven').on('stepin', function (e) {
+      d3.select("#step-eleven").on("stepin", function (e) {
         // do changes for step eleven
         showblueb();
 
@@ -3519,7 +3529,7 @@
         hidebluec();
       });
 
-      d3.select('#step-twelve').on('stepin', function (e) {
+      d3.select("#step-twelve").on("stepin", function (e) {
         // do changes for step twelve
         showbluec();
 
@@ -3529,7 +3539,7 @@
         hideq1gdp();
       });
 
-      d3.select('#step-thirteen').on('stepin', function (e) {
+      d3.select("#step-thirteen").on("stepin", function (e) {
         // do changes for step thirteen
         showblued();
         showq1gdparrow();
@@ -3603,24 +3613,24 @@
 
       scroller
         .setup({
-          step: '#scrolly .scrolly-overlay .step',
+          step: "#scrolly .scrolly-overlay .step",
           offset: 0.5,
           debug: false,
         })
         .onStepEnter(function ({ element, index, direction }) {
-          const event = new CustomEvent('stepin', {
+          const event = new CustomEvent("stepin", {
             detail: { direction: direction },
           });
           element.dispatchEvent(event);
         })
         .onStepExit(function ({ element, index, direction }) {
-          const event = new CustomEvent('stepout', {
+          const event = new CustomEvent("stepout", {
             detail: { direction: direction },
           });
           element.dispatchEvent(event);
         });
 
-      window.addEventListener('resize', scroller.resize);
+      window.addEventListener("resize", scroller.resize);
     </script>
 
     <!-- ai2html resizer script -->
@@ -3629,42 +3639,42 @@
       (function () {
         // only want one resizer on the page
         if (
-          document.documentElement.className.indexOf('g-resizer-v3-init') > -1
+          document.documentElement.className.indexOf("g-resizer-v3-init") > -1
         )
           return;
-        document.documentElement.className += ' g-resizer-v3-init';
+        document.documentElement.className += " g-resizer-v3-init";
         // require IE9+
-        if (!('querySelector' in document)) return;
+        if (!("querySelector" in document)) return;
         function resizer() {
           var elements = Array.prototype.slice.call(
-              document.querySelectorAll('.g-artboard[data-min-width]')
+              document.querySelectorAll(".g-artboard[data-min-width]")
             ),
             widthById = {};
           elements.forEach(function (el) {
             var parent = el.parentNode,
               width =
                 widthById[parent.id] || parent.getBoundingClientRect().width,
-              minwidth = el.getAttribute('data-min-width'),
-              maxwidth = el.getAttribute('data-max-width');
+              minwidth = el.getAttribute("data-min-width"),
+              maxwidth = el.getAttribute("data-max-width");
             widthById[parent.id] = width;
 
             if (
               +minwidth <= width &&
               (+maxwidth >= width || maxwidth === null)
             ) {
-              el.style.display = 'block';
+              el.style.display = "block";
             } else {
-              el.style.display = 'none';
+              el.style.display = "none";
             }
           });
           try {
             if (window.parent && window.parent.$) {
-              window.parent.$('body').trigger('resizedcontent', [window]);
+              window.parent.$("body").trigger("resizedcontent", [window]);
             }
             if (window.require) {
-              require(['foundation/main'], function () {
+              require(["foundation/main"], function () {
                 require([
-                  'shared/interactive/instances/app-communicator',
+                  "shared/interactive/instances/app-communicator",
                 ], function (AppCommunicator) {
                   AppCommunicator.triggerResize();
                 });
@@ -3675,9 +3685,9 @@
           }
         }
 
-        document.addEventListener('DOMContentLoaded', resizer);
+        document.addEventListener("DOMContentLoaded", resizer);
         // feel free to replace throttle with _.throttle, if available
-        window.addEventListener('resize', throttle(resizer, 200));
+        window.addEventListener("resize", throttle(resizer, 200));
 
         function throttle(func, wait) {
           // from underscore.js

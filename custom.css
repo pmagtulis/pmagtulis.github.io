@@ -11,6 +11,10 @@ body {
   background-color: #ffff;
 }
 
+.navbar-burger span {
+  background-color: #33302e;
+}
+
 body {
   position: relative;
 }
@@ -41,10 +45,6 @@ hr {
   padding: 8px;
 }
 
-.share-btn-container i:hover {
-  color: #33302e;
-}
-
 .share-btn-container .fa-facebook {
   color: #33302e;
 }
@@ -61,6 +61,6 @@ hr {
   color: #33302e;
 }
 
-a.navbar-item {
+a .navbar-item {
   color: #33302e;
 }
