@@ -15,8 +15,7 @@ body {
   background-color: #33302e;
 }
 
-a,
-.navbar-item {
+.navbar.is-dark .navbar-end>.navbar-item {
   color: #33302e;
 }
 
@@ -46,7 +45,6 @@ hr {
 .share-btn-container a i {
   font-size: 24px;
   margin: 8px 0;
-  transition: 500ms;
   padding: 8px;
 }
 
