@@ -15,6 +15,11 @@ body {
   background-color: #33302e;
 }
 
+a,
+.navbar-item {
+  color: #33302e;
+}
+
 body {
   position: relative;
 }
@@ -58,9 +63,5 @@ hr {
 }
 
 .share-btn-container .fa-whatsapp {
-  color: #33302e;
-}
-
-a .navbar-item {
   color: #33302e;
 }
