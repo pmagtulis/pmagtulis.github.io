@@ -419,8 +419,16 @@ footer {
     width: 24%;
   }
 
+  .alignright > p {
+    font-size: 22px;
+  }
+
   .button-container > h2 {
     font-size: 18px;
+  }
+
+  .intro-row > h2 {
+    font-size: 20px;
   }
 
   #main-menu {
@@ -441,14 +449,17 @@ footer {
 
   .fa-github {
     margin: 0 auto;
+    font-size: 22px;
   }
 
   .fa-linkedin {
     margin: 0 auto;
+    font-size: 22px;
   }
 
   .fa-twitter {
     margin: 0 auto;
     margin-left: 12px;
+    font-size: 22px;
   }
 }
