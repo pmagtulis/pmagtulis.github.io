@@ -372,24 +372,22 @@ h1 > a:hover {
     padding: 20px;
   }
 
-  .column-by-three {
-    width: 50%;
-    padding: 15px;
-    align-items: center;
-  }
-
   .image {
     margin-left: 40px;
   }
 
   .image-by-three {
-    width: 350px;
-    justify-content: flex-start;
+    width: 220px;
+    position: relative;
+  }
+
+  .cover {
+    font-size: 20px;
   }
 
   #hamburger-menu {
     display: block;
-    right: -75px;
+    right: -70%;
   }
 
   #hamburger-menu #sidebar-menu {
@@ -420,6 +418,10 @@ h1 > a:hover {
 
   .alignright {
     width: 24%;
+  }
+
+  .cover {
+    font-size: 20px;
   }
 
   #main-menu {

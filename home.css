@@ -255,7 +255,7 @@ footer {
 }
 
 #hamburger-menu {
-  position:relative;
+  position: relative;
   top: 20px;
   right: -15px;
   width: 50px;
@@ -281,7 +281,7 @@ footer {
 
 #hamburger-menu #sidebar-menu {
   visibility: hidden;
-  position:fixed;
+  position: fixed;
   font-size: 20px;
   top: 0;
   right: -100px;
@@ -362,17 +362,8 @@ footer {
   }
 
   .image {
-    align-items:flex-start;
-    width: 350px;
-    position: relative;
-  }
-
-  .row {
-    justify-content:space-evenly;
-  }
-
-  .column {
-    flex: 50%;
+    width: 220px;
+    position:relative;
   }
 
   .intro {
@@ -381,7 +372,19 @@ footer {
   }
 
   .intro > p {
-    font-size: 32px;
+    font-size: 24px;
+  }
+
+  .intro-row > h2 {
+    font-size: 20px;
+  }
+
+  .button-container > h2 {
+    font-size: 18px;
+  }
+
+  .cover {
+    font-size: 20px;
   }
 
   .button-container {
@@ -398,11 +401,35 @@ footer {
 
   #hamburger-menu {
     display: block;
-    right: -75px;
+    right: -70%;
   }
 
   #hamburger-menu #sidebar-menu {
     height: 10%;
+  }
+
+  footer > .alignright {
+    text-align: right;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    margin-top: 13px;
+  }
+
+  .fa-github {
+    margin: 0 auto;
+    font-size: 22px;
+  }
+
+  .fa-linkedin {
+    margin: 0 auto;
+    font-size: 22px;
+  }
+
+  .fa-twitter {
+    margin: 0 auto;
+    margin-left: 12px;
+    font-size: 22px;
   }
 }
 
@@ -435,7 +462,7 @@ footer {
   }
 
   .image_img {
-    display:flex;
+    display: flex;
     width: 100%;
   }
 
