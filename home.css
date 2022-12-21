@@ -400,6 +400,10 @@ footer {
     display: block;
     right: -75px;
   }
+
+  #hamburger-menu #sidebar-menu {
+    height: 10%;
+  }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
