@@ -363,7 +363,7 @@ footer {
 
   .image {
     width: 220px;
-    position:relative;
+    position: relative;
   }
 
   .intro {
@@ -488,6 +488,11 @@ footer {
 
   #hamburger-menu {
     display: block;
+    right: -40px;
+  }
+
+  #hamburger-menu #sidebar-menu {
+    height: 18%;
   }
 
   footer > .alignright {

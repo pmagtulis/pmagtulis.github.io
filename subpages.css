@@ -430,6 +430,11 @@ h1 > a:hover {
 
   #hamburger-menu {
     display: block;
+    right: -40px;
+  }
+
+  #hamburger-menu #sidebar-menu {
+    height: 18%;
   }
 
   .container > .row:first-child {
