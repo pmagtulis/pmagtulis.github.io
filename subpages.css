@@ -410,6 +410,7 @@ h1 > a:hover {
 
   .image {
     width: 350px;
+    margin-left: -20px;
   }
 
   .image-by-three {
