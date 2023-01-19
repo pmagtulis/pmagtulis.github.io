@@ -48,6 +48,33 @@ a {
   position: relative;
 }
 
+.container > .alignleft {
+  overflow: hidden;
+  display: flex;
+  border-right: 0.15em solid #33302e;
+  white-space: nowrap;
+  animation: typing 5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #33302e;
+  }
+}
+
 .intro > p {
   font-size: 28px;
   line-height: 1.3em;
@@ -357,6 +384,10 @@ footer {
 }
 
 @media only screen and (max-width: 820px) {
+  .alignleft {
+    width: auto;
+  }
+
   .alignleft > h1 {
     float: left;
   }
@@ -436,6 +467,11 @@ footer {
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .alignleft > h1 {
     float: left;
+  }
+
+  h1 {
+    font-size: 32px;
+    letter-spacing: 0.08em;
   }
 
   .row {
