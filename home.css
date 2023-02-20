@@ -18,13 +18,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:flex-start;
 }
 
 .column {
   flex: 33.33%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   padding: 12px;
   margin: inherit;
 }

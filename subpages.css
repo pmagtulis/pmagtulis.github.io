@@ -17,16 +17,18 @@ p {
 img.bio {
   font-size: 16px;
   color: inherit;
-  line-height: 1.4em;
-  padding: 14px;
+  line-height: 1.2em;
+  padding: 5px 10px 5px 0px; 
   font-family: inherit;
+  float: left;
+  vertical-align:text-top;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
 }
 
 .column {
@@ -147,8 +149,6 @@ a {
 }
 
 .photo {
-  vertical-align: text-top;
-  display: inline-flex;
   width: 600px;
   height: 320px;
   position: relative;
