@@ -23,17 +23,17 @@ img.bio {
   font-size: 16px;
   color: inherit;
   line-height: 1.2em;
-  padding: 5px 10px 5px 0px; 
+  padding: 5px 10px 5px 0px;
   font-family: inherit;
   float: left;
-  vertical-align:text-top;
+  vertical-align: text-top;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 .column {
@@ -283,6 +283,14 @@ h1 > a:hover {
   margin-right: 10px;
 }
 
+#socmed > p {
+  font-size: 30px;
+  color: inherit;
+  margin-left: 10px;
+  margin-right: 10px;
+  transform: translate(45%, 200px);
+}
+
 #hamburger-menu {
   position: relative;
   top: 20px;
@@ -432,6 +440,14 @@ h1 > a:hover {
   .container > .row:first-child {
     padding-top: 30px;
   }
+
+  #socmed > p {
+    font-size: 30px;
+    color: inherit;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: translate(40%, 200px);
+  }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
@@ -489,5 +505,13 @@ h1 > a:hover {
 
   .photo {
     display: contents;
+  }
+
+  #socmed > p {
+    font-size: 24px;
+    color: inherit;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: translate(35%, 50px);
   }
 }
