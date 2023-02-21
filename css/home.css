@@ -479,7 +479,7 @@ footer {
   }
 
   .row {
-    padding-left: 18px;
+    transform: translate(9%);
   }
 
   .intro {
