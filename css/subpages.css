@@ -35,6 +35,15 @@ img.bio {
   flex-direction: row;
   justify-content: flex-start;
 }
+/*/ This is for all the other rows */
+
+.row-for-about { 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+/*/ This is for centering the about section */
 
 .column {
   flex: 50%;
