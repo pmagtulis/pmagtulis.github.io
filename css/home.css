@@ -35,7 +35,7 @@ li {
 }
 
 .intro-row {
-  top: 50%;
+  top: 30%;
   left: 50%;
   margin: inherit;
 }
@@ -45,13 +45,20 @@ a {
   color: inherit;
 }
 
-.intro {
-  top: 30%;
-  margin-bottom: 20%;
-  text-align: center;
-  display: grid;
+.intro-one-line {
+  top: 10%;
+  margin-bottom: 10%;
+  text-align: left;
+  display: block;
   position: relative;
 }
+
+.intro-one-line > p {
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #33302e;
+}
+
 
 .container > .alignleft {
   overflow: hidden;
@@ -85,33 +92,6 @@ a {
   line-height: 1.3em;
   text-align: center;
   color: #33302e;
-}
-
-.financial {
-  padding: 2px 7px 5px;
-  font-weight: bold;
-  margin: 0 2px;
-  border-radius: 2px;
-  background-color: rgba(37, 118, 117, 0.9);
-  color: #ffffff;
-}
-
-.policy {
-  padding: 2px 7px 5px;
-  font-weight: bold;
-  margin: 0 2px;
-  border-radius: 2px;
-  background-color: rgba(0, 114, 206, 0.9);
-  color: #ffffff;
-}
-
-.graphics {
-  padding: 2px 7px 5px;
-  font-weight: bold;
-  margin: 0 2px;
-  border-radius: 2px;
-  background-color: rgba(209,65,36, 0.9);
-  color: #ffffff;
 }
 
 .image {
@@ -401,13 +381,12 @@ footer {
     position: relative;
   }
 
-  .intro {
+  .intro-one-line {
     top: 10%;
-    margin: 15%;
   }
 
-  .intro > p {
-    font-size: 24px;
+  .intro-one-line > p {
+    font-size: 20px;
   }
 
   .intro-row > h2 {
@@ -482,15 +461,16 @@ footer {
     transform: translate(9%);
   }
 
-  .intro {
+  .intro-one-line {
     top: 20%;
-    margin: 5%;
-    padding-bottom: 20%;
-    display: grid;
+    margin-top: 5%;
+    margin-left: 1;
+    padding-bottom: 2%;
+    display: block;
   }
 
-  .intro > p {
-    font-size: 22px;
+  .intro-one-line > p {
+    line-height: 1.4em;
   }
 
   .cover {
