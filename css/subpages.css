@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,300i,400,400i,700,700i&display=swap');
+
 html,
 body {
   overflow-x: hidden;
   position: relative;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0 auto;
   min-width: 360px;
 }
