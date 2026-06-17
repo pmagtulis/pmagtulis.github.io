@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   font-family: 'Source Sans Pro', sans-serif;
   min-width: 360px;
+  padding-bottom: 25px;
 }
 
 p {
